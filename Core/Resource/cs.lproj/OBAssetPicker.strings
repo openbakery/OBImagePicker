@@ -1,0 +1,13 @@
+/* 
+  OBAssetPicker.strings
+  Created by Rene Pirringer on 14.07.14.
+*/
+"ASSET_PICKER_TITLE" = "Vyberte položky";
+"ASSET_PICKER_TITLE_SINGLE_PHOTO_SELECTION" = "Vybrané obrázky: 1";
+"ASSET_PICKER_TITLE_MULTIPLE_PHOTOS_SELECTION" = "Vybrané fotografie: %@";
+"ASSET_PICKER_TITLE_SINGLE_VIDEO_SELECTION" = "Vybrané videa: 1";
+"ASSET_PICKER_TITLE_MULTIPLE_VIDEOS_SELECTION" = "Vybrané videa: %@";
+/* when both videos and photos are selected this title is displayed */
+"ASSET_PICKER_TITLE_MULTIPLE_ITEMS_SELECTION" = "Vybrané položky: %@";
+
+"ASSET_COLLECTION_TITLE" = "Fotos";

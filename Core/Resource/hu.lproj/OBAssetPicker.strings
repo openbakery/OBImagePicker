@@ -1,0 +1,13 @@
+/* 
+  OBAssetPicker.strings
+  Created by Rene Pirringer on 14.07.14.
+*/
+"ASSET_PICKER_TITLE" = "Elemek kijelölése";
+"ASSET_PICKER_TITLE_SINGLE_PHOTO_SELECTION" = "1 fotó kijeölve";
+"ASSET_PICKER_TITLE_MULTIPLE_PHOTOS_SELECTION" = "%@ fotó van kijeölve";
+"ASSET_PICKER_TITLE_SINGLE_VIDEO_SELECTION" = "1 videó kijeölve";
+"ASSET_PICKER_TITLE_MULTIPLE_VIDEOS_SELECTION" = "%@ videó van kijelölve";
+/* when both videos and photos are selected this title is displayed */
+"ASSET_PICKER_TITLE_MULTIPLE_ITEMS_SELECTION" = "%@ elem van kijelölve";
+
+"ASSET_COLLECTION_TITLE" = "Fotók";

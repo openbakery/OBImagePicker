@@ -1,0 +1,13 @@
+/* 
+  OBAssetPicker.strings
+  Created by Rene Pirringer on 14.07.14.
+*/
+"ASSET_PICKER_TITLE" = "Selecteer onderdelen";
+"ASSET_PICKER_TITLE_SINGLE_PHOTO_SELECTION" = "Selectie: 1 foto";
+"ASSET_PICKER_TITLE_MULTIPLE_PHOTOS_SELECTION" = "%@ foto's geselecteerd";
+"ASSET_PICKER_TITLE_SINGLE_VIDEO_SELECTION" = "Selectie: 1 video";
+"ASSET_PICKER_TITLE_MULTIPLE_VIDEOS_SELECTION" = "%@ video's geselecteerd";
+/* when both videos and photos are selected this title is displayed */
+"ASSET_PICKER_TITLE_MULTIPLE_ITEMS_SELECTION" = "%@ geselecteerd";
+
+"ASSET_COLLECTION_TITLE" = "Foto's";

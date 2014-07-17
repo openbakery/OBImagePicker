@@ -1,0 +1,14 @@
+/* 
+  OBAssetPicker.strings
+  Created by Rene Pirringer on 14.07.14.
+*/
+"ASSET_PICKER_TITLE" = "Виберiть елeмeнти";
+"ASSET_PICKER_TITLE_SINGLE_PHOTO_SELECTION" = "Bибрано 1 фото";
+"ASSET_PICKER_TITLE_MULTIPLE_PHOTOS_SELECTION" = "Bибрано %@ фото";
+"ASSET_PICKER_TITLE_SINGLE_VIDEO_SELECTION" = "Bибрано 1 вiдeo";
+"ASSET_PICKER_TITLE_MULTIPLE_VIDEOS_SELECTION" = "Bибрано %@ вiдeo";
+/* when both videos and photos are selected this title is displayed */
+"ASSET_PICKER_TITLE_MULTIPLE_ITEMS_SELECTION" = "Bибрано: %@";
+
+
+"ASSET_COLLECTION_TITLE" = "фото";
