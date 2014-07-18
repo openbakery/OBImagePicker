@@ -11,6 +11,7 @@
 #import "OBALCollection.h"
 #import "OBALAssetLibrary.h"
 #import "OBAsset.h"
+#import "OBCustomAssetCollectionViewCell.h"
 
 @interface OBViewController ()
 
@@ -34,6 +35,11 @@
 
 	};
 	OBImagePickerViewController *imagePickerViewController = [[OBImagePickerViewController alloc] initWithLibrary:library selectionHandler:selectionHandler errorHandler:nil];
+
+	if (self.useCustomAssetCell.on) {
+		[imagePickerViewController registerAssetCellClass:[OBCustomAssetCollectionViewCell class]];
+	}
+
 	imagePickerViewController.selectionMode = selectionMode;
 
 	[self presentViewController:imagePickerViewController animated:YES completion:nil];

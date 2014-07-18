@@ -12,20 +12,23 @@
 		355B2151B0C5020A71798A7C /* OBALAssetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2E0BE4958046E93F9A6D /* OBALAssetLibrary.m */; };
 		355B21E6C39B5912BA7FD64C /* OBCollectionPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2B457FF92C718AF82237 /* OBCollectionPickerViewController.m */; };
 		355B224A07C8F5CE7A05B064 /* OBCollectionTableViewCellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2529BF48C254D3E01E17 /* OBCollectionTableViewCellTest.m */; };
+		355B22F70ED327C5DF1B4608 /* ALAssetsGroupStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B29F7D10727667ADA7842 /* ALAssetsGroupStub.m */; };
 		355B237907292FD187731A77 /* Asset.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B25A49571CA13013382C1 /* Asset.png */; };
 		355B239E11BABD4EF873DCBF /* OBVideoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B2695A71E9EC5C329E546 /* OBVideoIcon@2x.png */; };
-		355B240C9FE4A4A101C5ED09 /* OBAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2B46D0D10E6CDDAF95CE /* OBAssetCollectionViewCell.m */; };
+		355B240C9FE4A4A101C5ED09 /* OBDefaultAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2B46D0D10E6CDDAF95CE /* OBDefaultAssetCollectionViewCell.m */; };
 		355B2428A3BBB40C33877AA8 /* OBAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2DE28D218FE9252840F5 /* OBAsset.m */; };
 		355B2708B440A0BEB1C19B74 /* OBAssertCheckedImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B27E3CE201AB176F2495F /* OBAssertCheckedImage@2x.png */; };
+		355B271BF24208FB89B795A7 /* OBTestAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2EFBAEAEE533B8531952 /* OBTestAssetCollectionViewCell.m */; };
 		355B2788ACE8C850FE6C7038 /* OBImagePickerViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B206AE3CF960CF4CB3557 /* OBImagePickerViewControllerTest.m */; };
 		355B279CAF82B7E9E0A8AB8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2FEDA47898552D73D172 /* main.m */; };
 		355B28656C7C437BA99ED2B8 /* OBVideoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B2E52C4BF2B9F104F4FCC /* OBVideoIcon.png */; };
-		355B286982E6DCD30322515B /* ALAssetsGroupStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25BFCE2CD317538751B7 /* ALAssetsGroupStub.m */; };
 		355B28C588667B247A7AF8A6 /* OBCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B22D399F0D29BCF3E7C44 /* OBCollection.m */; };
 		355B2A880F75E258876F1157 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355B20307C315B8F0A6087AE /* Images.xcassets */; };
 		355B2ADD71E858A121548BFC /* OBALAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2ABF7B61AB312641883E /* OBALAsset.m */; };
 		355B2AEE717CBFB1444D33F2 /* OBAssertCheckedImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B26D32CED01C0F7BDDC3D /* OBAssertCheckedImage.png */; };
+		355B2B13A4426A48EA062502 /* OBAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B230DBA81AAAFD8B1C824 /* OBAssetCollectionViewCell.m */; };
 		355B2B37F24894F310BFB528 /* OBAssetPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25D9A0E3AF58DC0C335F /* OBAssetPickerViewController.m */; };
+		355B2B3D4E9DE6384067F60E /* OBCustomAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2ACEC6851675F683331F /* OBCustomAssetCollectionViewCell.m */; };
 		355B2B4987B180A366ED013C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355B2833AAD7DBDC96FCBB39 /* Main_iPad.storyboard */; };
 		355B2BBD34F2D21735DED359 /* OBCollectionPickerViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B205FB79AD573BD192FE8 /* OBCollectionPickerViewControllerTest.m */; };
 		355B2CA852827BE76FE6DB9F /* OBCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B28AFCB1F6F72C1DB2709 /* OBCollectionTableViewCell.m */; };
@@ -59,13 +62,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		355B201F6357B788ED1679D3 /* ALAssetsGroupStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAssetsGroupStub.h; sourceTree = "<group>"; };
 		355B20307C315B8F0A6087AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		355B205FB79AD573BD192FE8 /* OBCollectionPickerViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCollectionPickerViewControllerTest.m; sourceTree = "<group>"; };
 		355B206AE3CF960CF4CB3557 /* OBImagePickerViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBImagePickerViewControllerTest.m; sourceTree = "<group>"; };
 		355B2102D332CF711C0FD7AE /* OBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBViewController.m; sourceTree = "<group>"; };
 		355B222FE8C18E7F347A6D03 /* TestNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNavigationController.m; sourceTree = "<group>"; };
 		355B22D399F0D29BCF3E7C44 /* OBCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCollection.m; sourceTree = "<group>"; };
+		355B230DBA81AAAFD8B1C824 /* OBAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAssetCollectionViewCell.m; sourceTree = "<group>"; };
 		355B2407D2D75C1EF5704348 /* OBAssetLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAssetLibrary.h; sourceTree = "<group>"; };
 		355B248F5EF7D0CE3CAABC77 /* OBImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBImagePickerViewController.h; sourceTree = "<group>"; };
 		355B2529BF48C254D3E01E17 /* OBCollectionTableViewCellTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCollectionTableViewCellTest.m; sourceTree = "<group>"; };
@@ -73,7 +76,6 @@
 		355B25A49571CA13013382C1 /* Asset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Asset.png; sourceTree = "<group>"; };
 		355B25B210C1C9EA30770699 /* OBAssetPickerViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAssetPickerViewControllerTest.m; sourceTree = "<group>"; };
 		355B25B93D31ABAADB21E4A8 /* UIBarButtonTestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBarButtonTestHelper.m; sourceTree = "<group>"; };
-		355B25BFCE2CD317538751B7 /* ALAssetsGroupStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAssetsGroupStub.m; sourceTree = "<group>"; };
 		355B25D9A0E3AF58DC0C335F /* OBAssetPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAssetPickerViewController.m; sourceTree = "<group>"; };
 		355B26214E8B3F8263E3A4A4 /* OBGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBGradientView.m; sourceTree = "<group>"; };
 		355B26887F8D66187FABDE3B /* OBCollectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCollectionTableViewCell.h; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		355B26D32CED01C0F7BDDC3D /* OBAssertCheckedImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OBAssertCheckedImage.png; sourceTree = "<group>"; };
 		355B26D4891E63208A0F135F /* OBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAppDelegate.h; sourceTree = "<group>"; };
 		355B27063BE8CF4F9A22BD22 /* OBALCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBALCollection.h; sourceTree = "<group>"; };
+		355B272E7B7862D900D8C4BF /* OBCustomAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCustomAssetCollectionViewCell.h; sourceTree = "<group>"; };
 		355B274ADC9742AE62045BD1 /* OBAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAsset.h; sourceTree = "<group>"; };
 		355B279CB36258F7EFE7C957 /* OBAssetPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAssetPickerViewController.h; sourceTree = "<group>"; };
 		355B27A9B56E74107EC4B3DE /* OBAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAsset.h; sourceTree = "<group>"; };
@@ -90,11 +93,15 @@
 		355B28AFCB1F6F72C1DB2709 /* OBCollectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCollectionTableViewCell.m; sourceTree = "<group>"; };
 		355B28F7ADA388F549ABE0C4 /* OBALAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBALAsset.h; sourceTree = "<group>"; };
 		355B295D53C58FB294BF5B90 /* OBALAssetLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBALAssetLibrary.h; sourceTree = "<group>"; };
+		355B29F7D10727667ADA7842 /* ALAssetsGroupStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAssetsGroupStub.m; sourceTree = "<group>"; };
 		355B2A7EDB21D25B5ED49D58 /* OBCollectionPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCollectionPickerViewController.h; sourceTree = "<group>"; };
+		355B2AA55CCDE9D764FF3806 /* OBAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAssetCollectionViewCell.h; sourceTree = "<group>"; };
 		355B2ABF7B61AB312641883E /* OBALAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBALAsset.m; sourceTree = "<group>"; };
-		355B2B3088DE859A864B41A7 /* OBAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAssetCollectionViewCell.h; sourceTree = "<group>"; };
+		355B2ACEC6851675F683331F /* OBCustomAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCustomAssetCollectionViewCell.m; sourceTree = "<group>"; };
+		355B2B3088DE859A864B41A7 /* OBDefaultAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBDefaultAssetCollectionViewCell.h; sourceTree = "<group>"; };
 		355B2B457FF92C718AF82237 /* OBCollectionPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCollectionPickerViewController.m; sourceTree = "<group>"; };
-		355B2B46D0D10E6CDDAF95CE /* OBAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAssetCollectionViewCell.m; sourceTree = "<group>"; };
+		355B2B46D0D10E6CDDAF95CE /* OBDefaultAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBDefaultAssetCollectionViewCell.m; sourceTree = "<group>"; };
+		355B2BE4085B204DE75463F3 /* OBTestAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTestAssetCollectionViewCell.h; sourceTree = "<group>"; };
 		355B2C437932D38DB2BCBE60 /* OBAssetLibraryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAssetLibraryTest.m; sourceTree = "<group>"; };
 		355B2C8737E1C9ABBD3B5AB2 /* OBImagePicker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OBImagePicker-Prefix.pch"; sourceTree = "<group>"; };
 		355B2D7C4F16E1701ADCE47C /* UIBarButtonTestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBarButtonTestHelper.h; sourceTree = "<group>"; };
@@ -103,7 +110,9 @@
 		355B2E0BE4958046E93F9A6D /* OBALAssetLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBALAssetLibrary.m; sourceTree = "<group>"; };
 		355B2E13DF9A5083AA669B07 /* OBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBViewController.h; sourceTree = "<group>"; };
 		355B2E52C4BF2B9F104F4FCC /* OBVideoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OBVideoIcon.png; sourceTree = "<group>"; };
+		355B2E6C36B55233C1FDFA0B /* ALAssetsGroupStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAssetsGroupStub.h; sourceTree = "<group>"; };
 		355B2E78866E37AC77D6260B /* OBALCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBALCollection.m; sourceTree = "<group>"; };
+		355B2EFBAEAEE533B8531952 /* OBTestAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTestAssetCollectionViewCell.m; sourceTree = "<group>"; };
 		355B2F2502A145B33B338C70 /* TestNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNavigationController.h; sourceTree = "<group>"; };
 		355B2FB07023020DF34C59CB /* OBCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCollection.h; sourceTree = "<group>"; };
 		355B2FEDA47898552D73D172 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -214,10 +223,9 @@
 				355B2529BF48C254D3E01E17 /* OBCollectionTableViewCellTest.m */,
 				355B2C437932D38DB2BCBE60 /* OBAssetLibraryTest.m */,
 				355B206AE3CF960CF4CB3557 /* OBImagePickerViewControllerTest.m */,
-				355B25BFCE2CD317538751B7 /* ALAssetsGroupStub.m */,
 				355B25B210C1C9EA30770699 /* OBAssetPickerViewControllerTest.m */,
-				355B201F6357B788ED1679D3 /* ALAssetsGroupStub.h */,
 				355B2D5AB22D40940648A9F4 /* Helpers */,
+				355B2D2322439044787F5D24 /* Stubs */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -230,7 +238,7 @@
 				355B26C436704145F4ACF0BF /* OBImagePickerViewController.m */,
 				355B2FB07023020DF34C59CB /* OBCollection.h */,
 				355B274ADC9742AE62045BD1 /* OBAsset.h */,
-				355B2B3088DE859A864B41A7 /* OBAssetCollectionViewCell.h */,
+				355B2B3088DE859A864B41A7 /* OBDefaultAssetCollectionViewCell.h */,
 				355B26214E8B3F8263E3A4A4 /* OBGradientView.m */,
 				355B2B457FF92C718AF82237 /* OBCollectionPickerViewController.m */,
 				355B248F5EF7D0CE3CAABC77 /* OBImagePickerViewController.h */,
@@ -238,11 +246,13 @@
 				355B2DE28D218FE9252840F5 /* OBAsset.m */,
 				355B25A4532088679D16224B /* OBGradientView.h */,
 				355B279CB36258F7EFE7C957 /* OBAssetPickerViewController.h */,
-				355B2B46D0D10E6CDDAF95CE /* OBAssetCollectionViewCell.m */,
+				355B2B46D0D10E6CDDAF95CE /* OBDefaultAssetCollectionViewCell.m */,
 				355B2407D2D75C1EF5704348 /* OBAssetLibrary.h */,
 				355B28AFCB1F6F72C1DB2709 /* OBCollectionTableViewCell.m */,
 				355B25D9A0E3AF58DC0C335F /* OBAssetPickerViewController.m */,
 				355B25657C6DA6C854AE880C /* ALAsset */,
+				355B230DBA81AAAFD8B1C824 /* OBAssetCollectionViewCell.m */,
+				355B2AA55CCDE9D764FF3806 /* OBAssetCollectionViewCell.h */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -272,8 +282,19 @@
 				355B26D4891E63208A0F135F /* OBAppDelegate.h */,
 				355B2DD330CA0D695376CF1F /* OBAppDelegate.m */,
 				355B2FEDA47898552D73D172 /* main.m */,
+				355B2ACEC6851675F683331F /* OBCustomAssetCollectionViewCell.m */,
+				355B272E7B7862D900D8C4BF /* OBCustomAssetCollectionViewCell.h */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		355B2D2322439044787F5D24 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				355B29F7D10727667ADA7842 /* ALAssetsGroupStub.m */,
+				355B2E6C36B55233C1FDFA0B /* ALAssetsGroupStub.h */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 		355B2D5AB22D40940648A9F4 /* Helpers */ = {
@@ -283,6 +304,8 @@
 				355B2D7C4F16E1701ADCE47C /* UIBarButtonTestHelper.h */,
 				355B2F2502A145B33B338C70 /* TestNavigationController.h */,
 				355B222FE8C18E7F347A6D03 /* TestNavigationController.m */,
+				355B2EFBAEAEE533B8531952 /* OBTestAssetCollectionViewCell.m */,
+				355B2BE4085B204DE75463F3 /* OBTestAssetCollectionViewCell.h */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -517,12 +540,15 @@
 				355B21E6C39B5912BA7FD64C /* OBCollectionPickerViewController.m in Sources */,
 				355B28C588667B247A7AF8A6 /* OBCollection.m in Sources */,
 				355B2428A3BBB40C33877AA8 /* OBAsset.m in Sources */,
-				355B240C9FE4A4A101C5ED09 /* OBAssetCollectionViewCell.m in Sources */,
+				355B240C9FE4A4A101C5ED09 /* OBDefaultAssetCollectionViewCell.m in Sources */,
 				355B2CA852827BE76FE6DB9F /* OBCollectionTableViewCell.m in Sources */,
 				355B2B37F24894F310BFB528 /* OBAssetPickerViewController.m in Sources */,
 				355B2ADD71E858A121548BFC /* OBALAsset.m in Sources */,
 				355B209A42D429ADE74F8D70 /* OBALCollection.m in Sources */,
 				355B2151B0C5020A71798A7C /* OBALAssetLibrary.m in Sources */,
+				355B2B13A4426A48EA062502 /* OBAssetCollectionViewCell.m in Sources */,
+				355B271BF24208FB89B795A7 /* OBTestAssetCollectionViewCell.m in Sources */,
+				355B2B3D4E9DE6384067F60E /* OBCustomAssetCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,8 +562,8 @@
 				355B2BBD34F2D21735DED359 /* OBCollectionPickerViewControllerTest.m in Sources */,
 				355B2CD81CC3F9EEA39532E1 /* OBAssetLibraryTest.m in Sources */,
 				355B2F973C3A845557D42651 /* OBAssetPickerViewControllerTest.m in Sources */,
-				355B286982E6DCD30322515B /* ALAssetsGroupStub.m in Sources */,
 				355B2788ACE8C850FE6C7038 /* OBImagePickerViewControllerTest.m in Sources */,
+				355B22F70ED327C5DF1B4608 /* ALAssetsGroupStub.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

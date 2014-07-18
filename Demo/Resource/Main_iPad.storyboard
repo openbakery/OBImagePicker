@@ -27,7 +27,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="showMultiSelectionPicker:" destination="H1w-5o-IiS" eventType="touchUpOutside" id="471-k1-f3M"/>
+                                    <action selector="showMultiSelectionPicker:" destination="H1w-5o-IiS" eventType="touchUpInside" id="U5S-V2-o8c"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kR8-Gf-0TB">
@@ -40,21 +40,36 @@
                                     <action selector="showSingleModePicker:" destination="H1w-5o-IiS" eventType="touchUpInside" id="JLK-ui-7If"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="a37-Va-Hjg">
+                                <rect key="frame" x="699" y="935" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Use Custom Asset Cell" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmZ-Xh-JLc">
+                                <rect key="frame" x="514" y="940" width="177" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="a37-Va-Hjg" firstAttribute="leading" secondItem="gmZ-Xh-JLc" secondAttribute="trailing" constant="8" id="5O9-4X-Nkb"/>
                             <constraint firstAttribute="trailing" secondItem="rQt-VA-eET" secondAttribute="trailing" id="8dj-v0-NVW"/>
                             <constraint firstItem="mnC-RQ-YT9" firstAttribute="top" secondItem="kR8-Gf-0TB" secondAttribute="bottom" constant="20" id="DtA-KU-gp4"/>
+                            <constraint firstItem="aB7-e5-VL8" firstAttribute="top" secondItem="a37-Va-Hjg" secondAttribute="bottom" constant="8" id="HKL-eM-vbs"/>
                             <constraint firstAttribute="trailing" secondItem="aB7-e5-VL8" secondAttribute="trailing" constant="20" id="Ibl-0v-KFJ"/>
+                            <constraint firstAttribute="trailing" secondItem="a37-Va-Hjg" secondAttribute="trailing" constant="20" id="TGz-MR-KxZ"/>
                             <constraint firstItem="kR8-Gf-0TB" firstAttribute="leading" secondItem="2l8-1L-RC6" secondAttribute="leading" constant="20" id="Tgi-GY-Qye"/>
                             <constraint firstItem="mnC-RQ-YT9" firstAttribute="top" secondItem="rQt-VA-eET" secondAttribute="bottom" id="VN0-S1-aoQ"/>
                             <constraint firstItem="rQt-VA-eET" firstAttribute="top" secondItem="2l8-1L-RC6" secondAttribute="top" id="VsN-BS-TNZ"/>
+                            <constraint firstItem="a37-Va-Hjg" firstAttribute="centerY" secondItem="gmZ-Xh-JLc" secondAttribute="centerY" id="Z8O-UV-B65"/>
                             <constraint firstItem="mnC-RQ-YT9" firstAttribute="top" secondItem="aB7-e5-VL8" secondAttribute="bottom" constant="20" id="k8X-Px-PdU"/>
                             <constraint firstItem="rQt-VA-eET" firstAttribute="leading" secondItem="2l8-1L-RC6" secondAttribute="leading" id="vqE-X4-CPx"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="rQt-VA-eET" id="AvN-E9-Cl8"/>
+                        <outlet property="useCustomAssetCell" destination="a37-Va-Hjg" id="eSK-iy-u6l"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAf-dq-wlu" userLabel="First Responder" sceneMemberID="firstResponder"/>

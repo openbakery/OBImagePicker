@@ -26,6 +26,8 @@ NS_ENUM(NSInteger, OBImagePickerSelectionMode) {
 
 - (instancetype)initWithLibrary:(id<OBAssetLibrary>)library selectionHandler:(OBAssertPickerSelectionHandlerBlock)selectionHandler errorHandler:(OBAssertPickerErrorHandlerBlock)errorHandler;
 
+- (void)registerAssetCellClass:(Class)cellClass;
+
 @property (nonatomic, assign) enum OBImagePickerSelectionMode selectionMode;
 
 - (void)reloadData;

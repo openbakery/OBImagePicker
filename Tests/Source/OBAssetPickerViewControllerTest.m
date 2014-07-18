@@ -10,8 +10,9 @@
 #import "TestNavigationController.h"
 #import "OBALAssetLibrary.h"
 #import "OBAsset.h"
-#import "OBAssetCollectionViewCell.h"
+#import "OBDefaultAssetCollectionViewCell.h"
 #import "UIBarButtonTestHelper.h"
+#import "OBTestAssetCollectionViewCell.h"
 
 #define HC_SHORTHAND
 #import <OCHamcrest.h>
@@ -95,8 +96,8 @@
 	[_window makeKeyAndVisible];
 	[self mockLibraryWithCollection:_assets];
 
-	OBAssetCollectionViewCell *cell = (OBAssetCollectionViewCell*)[_viewController collectionView:_viewController.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
-	assertThat(cell, instanceOf([OBAssetCollectionViewCell class]));
+	OBDefaultAssetCollectionViewCell *cell = (OBDefaultAssetCollectionViewCell*)[_viewController collectionView:_viewController.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+	assertThat(cell, instanceOf([OBDefaultAssetCollectionViewCell class]));
 
 	assertThat(cell.imageView, is(notNilValue()));
 
@@ -142,7 +143,7 @@
 	[_window makeKeyAndVisible];
 	[self mockLibraryWithCollection:_assets];
 
-	OBAssetCollectionViewCell *cell = (OBAssetCollectionViewCell*)[_viewController collectionView:_viewController.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
+	OBDefaultAssetCollectionViewCell *cell = (OBDefaultAssetCollectionViewCell*)[_viewController collectionView:_viewController.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
 
 	[cell setSelected:YES];
 
@@ -261,7 +262,7 @@
 	[_window makeKeyAndVisible];
 	[self mockLibraryWithCollection:_assets];
 
-	OBAssetCollectionViewCell *cell = (OBAssetCollectionViewCell*)[_viewController collectionView:_viewController.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:10 inSection:0]];
+	OBDefaultAssetCollectionViewCell *cell = (OBDefaultAssetCollectionViewCell*)[_viewController collectionView:_viewController.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:10 inSection:0]];
 
 	UIView *gradientView = [cell valueForKey:@"_gradientView"];
 	assertThat(gradientView, is(notNilValue()));
@@ -299,7 +300,7 @@
 	[_viewController.collectionView selectItemAtIndexPath:indexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
 	[_viewController collectionView:_viewController.collectionView didSelectItemAtIndexPath:indexPath];
 
-	OBAssetCollectionViewCell *cell = (OBAssetCollectionViewCell*)[_viewController collectionView:_viewController.collectionView cellForItemAtIndexPath:indexPath];
+	OBDefaultAssetCollectionViewCell *cell = (OBDefaultAssetCollectionViewCell*)[_viewController collectionView:_viewController.collectionView cellForItemAtIndexPath:indexPath];
 	assertThatBool(cell.selected, is(@YES));
 
 }
@@ -382,6 +383,19 @@
 	assertThatBool(completionExecuted, is(@YES));
 	assertThat(selectedAssets, hasCountOf(1));
 	assertThat([selectedAssets firstObject], is(instanceOf([OBAsset class])));
+}
+
+
+- (void)testCustomAssetCell {
+	[_navigationController registerAssetCellClass:[OBTestAssetCollectionViewCell class]];
+
+
+	[_window makeKeyAndVisible];
+	[self mockLibraryWithCollection:_assets];
+
+	OBDefaultAssetCollectionViewCell *cell = (OBDefaultAssetCollectionViewCell*)[_viewController collectionView:_viewController.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:10 inSection:0]];
+	assertThat(cell, is(instanceOf([OBTestAssetCollectionViewCell class])));
+
 }
 
 @end

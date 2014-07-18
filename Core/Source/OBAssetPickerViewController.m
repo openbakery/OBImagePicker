@@ -10,9 +10,12 @@
 #import "OBAssetPickerViewController.h"
 #import "OBALAssetLibrary.h"
 #import "OBCollection.h"
-#import "OBAssetCollectionViewCell.h"
+#import "OBDefaultAssetCollectionViewCell.h"
 #import "OBAsset.h"
 
+@interface OBImagePickerViewController(private)
+- (Class)registeredAssetCellClass;
+@end
 
 @interface OBAssetPickerViewController ()
 @property(nonatomic, strong) NSArray* photos;
@@ -52,7 +55,15 @@
 	self.collectionView.dataSource = self;
 	self.collectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 	self.collectionView.allowsMultipleSelection = YES;
-	[self.collectionView registerClass:[OBAssetCollectionViewCell class] forCellWithReuseIdentifier:collectionCellIdentifier];
+
+	if ([self.navigationController isKindOfClass:[OBImagePickerViewController class]]) {
+		OBImagePickerViewController *imagePickerViewController = (OBImagePickerViewController *)self.navigationController;
+		[self.collectionView registerClass:[imagePickerViewController registeredAssetCellClass] forCellWithReuseIdentifier:collectionCellIdentifier];
+	} else {
+		[self.collectionView registerClass:[OBDefaultAssetCollectionViewCell class] forCellWithReuseIdentifier:collectionCellIdentifier];
+	}
+
+
 
 
 	[self.view addSubview:self.collectionView];
@@ -147,7 +158,7 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-	OBAssetCollectionViewCell *cell = (OBAssetCollectionViewCell*)[self.collectionView dequeueReusableCellWithReuseIdentifier:collectionCellIdentifier forIndexPath:indexPath];
+	OBDefaultAssetCollectionViewCell *cell = (OBDefaultAssetCollectionViewCell *)[self.collectionView dequeueReusableCellWithReuseIdentifier:collectionCellIdentifier forIndexPath:indexPath];
 	OBAsset *asset = [self assetAtIndexPath:indexPath];
 	cell.asset = asset;
 	[cell setSelected:[_selectedAssets containsObject:asset]];
