@@ -29,7 +29,6 @@
 	self.imageView.frame = self.contentView.frame;
 }
 
-
 - (void)setAsset:(OBAsset *)asset {
 	_asset = asset;
 	self.imageView.image = self.asset.thumbnailImage;
