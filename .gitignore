@@ -2,3 +2,5 @@
 .idea
 Podfile.lock
 Pods
+xcuserdata
+project.xcworkspace
