@@ -10,11 +10,9 @@
 		355B202E8C9424AB51E3E1E7 /* UIBarButtonTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25B93D31ABAADB21E4A8 /* UIBarButtonTestHelper.m */; };
 		355B209A42D429ADE74F8D70 /* OBALCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2E78866E37AC77D6260B /* OBALCollection.m */; };
 		355B2151B0C5020A71798A7C /* OBALAssetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2E0BE4958046E93F9A6D /* OBALAssetLibrary.m */; };
-		355B21E6C39B5912BA7FD64C /* OBCollectionPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2B457FF92C718AF82237 /* OBCollectionPickerViewController.m */; };
 		355B224A07C8F5CE7A05B064 /* OBCollectionTableViewCellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2529BF48C254D3E01E17 /* OBCollectionTableViewCellTest.m */; };
 		355B22F70ED327C5DF1B4608 /* ALAssetsGroupStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B29F7D10727667ADA7842 /* ALAssetsGroupStub.m */; };
 		355B237907292FD187731A77 /* Asset.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B25A49571CA13013382C1 /* Asset.png */; };
-		355B239E11BABD4EF873DCBF /* OBVideoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B2695A71E9EC5C329E546 /* OBVideoIcon@2x.png */; };
 		355B240C9FE4A4A101C5ED09 /* OBDefaultAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2B46D0D10E6CDDAF95CE /* OBDefaultAssetCollectionViewCell.m */; };
 		355B2428A3BBB40C33877AA8 /* OBAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2DE28D218FE9252840F5 /* OBAsset.m */; };
 		355B2708B440A0BEB1C19B74 /* OBAssertCheckedImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B27E3CE201AB176F2495F /* OBAssertCheckedImage@2x.png */; };
@@ -31,15 +29,20 @@
 		355B2B3D4E9DE6384067F60E /* OBCustomAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2ACEC6851675F683331F /* OBCustomAssetCollectionViewCell.m */; };
 		355B2B4987B180A366ED013C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355B2833AAD7DBDC96FCBB39 /* Main_iPad.storyboard */; };
 		355B2BBD34F2D21735DED359 /* OBCollectionPickerViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B205FB79AD573BD192FE8 /* OBCollectionPickerViewControllerTest.m */; };
-		355B2CA852827BE76FE6DB9F /* OBCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B28AFCB1F6F72C1DB2709 /* OBCollectionTableViewCell.m */; };
 		355B2CD81CC3F9EEA39532E1 /* OBAssetLibraryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2C437932D38DB2BCBE60 /* OBAssetLibraryTest.m */; };
 		355B2E8F2E09644F1C27B66A /* OBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2DD330CA0D695376CF1F /* OBAppDelegate.m */; };
 		355B2EA0B3571F351CB807BC /* TestNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B222FE8C18E7F347A6D03 /* TestNavigationController.m */; };
 		355B2F5DFFE39AAC3B16A2BF /* OBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2102D332CF711C0FD7AE /* OBViewController.m */; };
 		355B2F973C3A845557D42651 /* OBAssetPickerViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25B210C1C9EA30770699 /* OBAssetPickerViewControllerTest.m */; };
-		355B2FB8F08C456EDAAB9661 /* OBGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26214E8B3F8263E3A4A4 /* OBGradientView.m */; };
 		355B2FD6ADA73C07847D419E /* OBImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26C436704145F4ACF0BF /* OBImagePickerViewController.m */; };
 		A72E4D8E197953E200B80030 /* OBAssetPicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = A74D4C9019780473000A9991 /* OBAssetPicker.strings */; };
+		A72E4D8F197956CE00B80030 /* OBGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26214E8B3F8263E3A4A4 /* OBGradientView.m */; };
+		A72E4D90197956CE00B80030 /* OBCollectionPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2B457FF92C718AF82237 /* OBCollectionPickerViewController.m */; };
+		A72E4D91197956CE00B80030 /* OBCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B22D399F0D29BCF3E7C44 /* OBCollection.m */; };
+		A72E4D92197956CE00B80030 /* OBAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2DE28D218FE9252840F5 /* OBAsset.m */; };
+		A72E4D93197956CE00B80030 /* OBAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2B46D0D10E6CDDAF95CE /* OBAssetCollectionViewCell.m */; };
+		A72E4D94197956CE00B80030 /* OBCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B28AFCB1F6F72C1DB2709 /* OBCollectionTableViewCell.m */; };
+		A72E4D95197956CE00B80030 /* OBAssetPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25D9A0E3AF58DC0C335F /* OBAssetPickerViewController.m */; };
 		A74D4C571978017B000A9991 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74D4C561978017B000A9991 /* Foundation.framework */; };
 		A74D4C591978017B000A9991 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74D4C581978017B000A9991 /* CoreGraphics.framework */; };
 		A74D4C5B1978017B000A9991 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74D4C5A1978017B000A9991 /* UIKit.framework */; };
@@ -165,6 +168,7 @@
 		355B2FEED1B037F5FD2E3522 /* OBImagePicker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "OBImagePicker-Info.plist"; sourceTree = "<group>"; };
 		8B909DAB653D4A3CB7E2970A /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
 		A72E4D8C1979534A00B80030 /* Resources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Resources-Info.plist"; sourceTree = "<group>"; };
+		A72E4D961979575C00B80030 /* OBImagePicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OBImagePicker-Prefix.pch"; sourceTree = "<group>"; };
 		A74D4C531978017B000A9991 /* OBImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OBImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74D4C561978017B000A9991 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A74D4C581978017B000A9991 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -325,6 +329,7 @@
 		355B2B20A5A3A05199685BCF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A72E4D961979575C00B80030 /* OBImagePicker-Prefix.pch */,
 				355B274424A7824ECE100DF7 /* Source */,
 				355B25C714FB6FF28AB7CE12 /* Resource */,
 			);
@@ -674,6 +679,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72E4D94197956CE00B80030 /* OBCollectionTableViewCell.m in Sources */,
+				A72E4D95197956CE00B80030 /* OBAssetPickerViewController.m in Sources */,
+				A72E4D8F197956CE00B80030 /* OBGradientView.m in Sources */,
+				A72E4D93197956CE00B80030 /* OBAssetCollectionViewCell.m in Sources */,
+				A72E4D92197956CE00B80030 /* OBAsset.m in Sources */,
+				A72E4D90197956CE00B80030 /* OBCollectionPickerViewController.m in Sources */,
+				A72E4D91197956CE00B80030 /* OBCollection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -895,6 +907,7 @@
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Core/OBImagePicker-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -911,6 +924,7 @@
 			buildSettings = {
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Core/OBImagePicker-Prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = OBImagePicker;
