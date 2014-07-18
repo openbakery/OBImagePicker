@@ -26,7 +26,7 @@
 	UIBarButtonItem *_doneButton;
 	NSMutableArray *_selectedAssets;
 	BOOL _reloadOnViewWillAppear;
-	OBImagePickerSelectionMode _selectionMode;
+	enum OBImagePickerSelectionMode _selectionMode;
 }
 
 - (instancetype)initWithCollection:(OBCollection *)collection {

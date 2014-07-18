@@ -16,17 +16,17 @@ typedef void (^OBAssertPickerSelectionHandlerBlock)(NSArray *assets, OBImagePick
 typedef void (^OBAssertPickerErrorHandlerBlock)(NSError *error, OBImagePickerViewController *controller);
 
 
-typedef enum {
+NS_ENUM(NSInteger, OBImagePickerSelectionMode) {
 	OBImagePickerMultipleSelectionMode = 0,
 	OBImagePickerSingleSelectionMode
-} OBImagePickerSelectionMode;
+};
 
 
 @interface OBImagePickerViewController : UINavigationController
 
 - (instancetype)initWithLibrary:(id<OBAssetLibrary>)library selectionHandler:(OBAssertPickerSelectionHandlerBlock)selectionHandler errorHandler:(OBAssertPickerErrorHandlerBlock)errorHandler;
 
-@property (nonatomic, assign) OBImagePickerSelectionMode *selectionMode;
+@property (nonatomic, assign) enum OBImagePickerSelectionMode selectionMode;
 
 - (void)reloadData;
 

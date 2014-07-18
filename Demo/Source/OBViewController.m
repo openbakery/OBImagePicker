@@ -19,7 +19,7 @@
 @implementation OBViewController
 
 
-- (void)showPickerWithMode:(OBImagePickerSelectionMode)selectionMode {
+- (void)showPickerWithMode:(enum OBImagePickerSelectionMode)selectionMode {
 	OBALAssetLibrary *library = [[OBALAssetLibrary alloc] initWithType:OBAssetLibraryTypeAll];
 
 	__weak OBViewController *weakSelf = self;
