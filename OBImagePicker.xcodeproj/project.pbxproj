@@ -912,7 +912,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = OBImagePicker;
 				SKIP_INSTALL = YES;
@@ -925,7 +925,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Core/OBImagePicker-Prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = OBImagePicker;
 				SKIP_INSTALL = YES;
@@ -942,8 +942,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Core/Resource/Resources-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = OBImagePicker;
 				SDKROOT = iphoneos;
@@ -959,8 +958,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = "Core/Resource/Resources-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = OBImagePicker;
 				SDKROOT = iphoneos;
