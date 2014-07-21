@@ -25,7 +25,14 @@
 		UIColor *endColor = [UIColor colorWithWhite:0.0 alpha:0.8];
 		_gradientView = [[OBGradientView alloc] initWithFrame:frame startColor:startColor endColor:endColor];
 
-		UIImage *iconImage = [UIImage imageNamed:@"OBVideoIcon.png"];
+		// get the resource bundle
+		NSString *resourceBundlePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"OBImagePicker" ofType:@"bundle"];
+		NSBundle *resourceBundle = [NSBundle bundleWithPath:resourceBundlePath];
+		NSAssert(resourceBundle, @"Unable to find OBImagePicker resource bundle");
+		
+		NSString *imagePath = [resourceBundle pathForResource:@"OBVideoIcon" ofType:@"png"];
+		UIImage *iconImage = [UIImage imageWithContentsOfFile:imagePath];
+		NSAssert(iconImage, @"Unable to find video placeholder image");
 		UIImageView *icon = [[UIImageView alloc] initWithImage:iconImage];
 
 		icon.frame = CGRectMake(5, _gradientView.frame.size.height - 5 - iconImage.size.height, iconImage.size.width, iconImage.size.height);
@@ -68,7 +75,16 @@
 		_highlighedView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
 		_highlighedView.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.3];
 
-		UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"OBAssertCheckedImage.png"]];
+		// get the resource bundle
+		NSString *resourceBundlePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"OBImagePicker" ofType:@"bundle"];
+		NSBundle *resourceBundle = [NSBundle bundleWithPath:resourceBundlePath];
+		NSAssert(resourceBundle, @"Unable to find OBImagePicker resource bundle");
+		
+		NSString *imagePath = [resourceBundle pathForResource:@"OBAssertCheckedImage" ofType:@"png"];
+		UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
+		NSAssert(image, @"Unable to find checked image");
+		
+		UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
 		imageView.frame = CGRectOffset(imageView.frame, _highlighedView.frame.size.width-imageView.frame.size.width, _highlighedView.frame.size.height-imageView.frame.size.height);
 		[_highlighedView addSubview:imageView];
 
