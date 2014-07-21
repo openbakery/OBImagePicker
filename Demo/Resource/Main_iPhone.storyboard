@@ -40,6 +40,17 @@
                                     <action selector="showSingleModePicker:" destination="nVK-fJ-AcP" eventType="touchUpInside" id="RDt-kL-ax2"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="j6o-gi-4f2">
+                                <rect key="frame" x="251" y="479" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use Custom Asset Cell" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HbU-Fr-ZIY">
+                                <rect key="frame" x="94" y="486" width="149" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -47,14 +58,19 @@
                             <constraint firstItem="DYV-Sh-5Z8" firstAttribute="leading" secondItem="sv1-db-ONz" secondAttribute="leading" constant="20" id="Cq1-zT-XM6"/>
                             <constraint firstItem="Ij5-60-edG" firstAttribute="leading" secondItem="sv1-db-ONz" secondAttribute="leading" id="Fvn-Fl-Rjc"/>
                             <constraint firstAttribute="trailing" secondItem="Ij5-60-edG" secondAttribute="trailing" id="OsG-OZ-0eH"/>
+                            <constraint firstItem="HbU-Fr-ZIY" firstAttribute="centerY" secondItem="j6o-gi-4f2" secondAttribute="centerY" id="YL9-Lt-SLs"/>
+                            <constraint firstItem="x3H-aL-B7a" firstAttribute="top" secondItem="j6o-gi-4f2" secondAttribute="bottom" constant="8" id="ZMb-7Y-plU"/>
                             <constraint firstItem="IE8-iP-iDC" firstAttribute="top" secondItem="DYV-Sh-5Z8" secondAttribute="bottom" constant="20" id="clb-E7-bdt"/>
+                            <constraint firstAttribute="trailing" secondItem="j6o-gi-4f2" secondAttribute="trailing" constant="20" id="gdp-NR-0BQ"/>
                             <constraint firstAttribute="trailing" secondItem="x3H-aL-B7a" secondAttribute="trailing" constant="20" id="i4M-Up-3KO"/>
                             <constraint firstItem="IE8-iP-iDC" firstAttribute="top" secondItem="Ij5-60-edG" secondAttribute="bottom" id="ogJ-Dl-BZg"/>
+                            <constraint firstItem="j6o-gi-4f2" firstAttribute="leading" secondItem="HbU-Fr-ZIY" secondAttribute="trailing" constant="8" id="te7-mK-TmJ"/>
                             <constraint firstItem="IE8-iP-iDC" firstAttribute="top" secondItem="x3H-aL-B7a" secondAttribute="bottom" constant="20" id="ubd-nJ-bYF"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="Ij5-60-edG" id="ed7-rc-7YO"/>
+                        <outlet property="useCustomAssetCell" destination="j6o-gi-4f2" id="cou-7H-thW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dU5-cQ-TGU" userLabel="First Responder" sceneMemberID="firstResponder"/>

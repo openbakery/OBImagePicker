@@ -10,9 +10,12 @@
 #import "OBAssetPickerViewController.h"
 #import "OBALAssetLibrary.h"
 #import "OBCollection.h"
-#import "OBAssetCollectionViewCell.h"
+#import "OBDefaultAssetCollectionViewCell.h"
 #import "OBAsset.h"
 
+@interface OBImagePickerViewController(private)
+- (Class)registeredAssetCellClass;
+@end
 
 @interface OBAssetPickerViewController ()
 @property(nonatomic, strong) NSArray* photos;
@@ -52,7 +55,15 @@
 	self.collectionView.dataSource = self;
 	self.collectionView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 	self.collectionView.allowsMultipleSelection = YES;
-	[self.collectionView registerClass:[OBAssetCollectionViewCell class] forCellWithReuseIdentifier:collectionCellIdentifier];
+
+	if ([self.navigationController isKindOfClass:[OBImagePickerViewController class]]) {
+		OBImagePickerViewController *imagePickerViewController = (OBImagePickerViewController *)self.navigationController;
+		[self.collectionView registerClass:[imagePickerViewController registeredAssetCellClass] forCellWithReuseIdentifier:collectionCellIdentifier];
+	} else {
+		[self.collectionView registerClass:[OBDefaultAssetCollectionViewCell class] forCellWithReuseIdentifier:collectionCellIdentifier];
+	}
+
+
 
 
 	[self.view addSubview:self.collectionView];
@@ -147,7 +158,7 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-	OBAssetCollectionViewCell *cell = (OBAssetCollectionViewCell*)[self.collectionView dequeueReusableCellWithReuseIdentifier:collectionCellIdentifier forIndexPath:indexPath];
+	OBDefaultAssetCollectionViewCell *cell = (OBDefaultAssetCollectionViewCell *)[self.collectionView dequeueReusableCellWithReuseIdentifier:collectionCellIdentifier forIndexPath:indexPath];
 	OBAsset *asset = [self assetAtIndexPath:indexPath];
 	cell.asset = asset;
 	[cell setSelected:[_selectedAssets containsObject:asset]];
@@ -183,13 +194,18 @@
 - (void)updateContentAfterInteraction {
 
 	NSInteger count = [_selectedAssets count];
+	
+	// get the resource bundle
+	NSString *resourceBundlePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"OBImagePicker" ofType:@"bundle"];
+	NSBundle *resourceBundle = [NSBundle bundleWithPath:resourceBundlePath];
+	NSAssert(resourceBundle, @"Unable to find OBImagePicker resource bundle");
 
 	if (count == 1) {
 		OBAsset *asset = [_selectedAssets firstObject];
 		if (asset.isVideo) {
-			[self.navigationItem setTitle:NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE_SINGLE_VIDEO_SELECTION", @"OBAssetPicker", @"")];
+			[self.navigationItem setTitle:NSLocalizedStringFromTableInBundle(@"ASSET_PICKER_TITLE_SINGLE_VIDEO_SELECTION", @"OBAssetPicker", resourceBundle, @"")];
 		} else {
-			[self.navigationItem setTitle:NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE_SINGLE_PHOTO_SELECTION", @"OBAssetPicker", @"")];
+			[self.navigationItem setTitle:NSLocalizedStringFromTableInBundle(@"ASSET_PICKER_TITLE_SINGLE_PHOTO_SELECTION", @"OBAssetPicker", resourceBundle, @"")];
 		}
 	} else if ([_selectedAssets count] > 1) {
 
@@ -197,18 +213,18 @@
 		if ([self allAssertsAreOfSameTypeIn:_selectedAssets]) {
 			OBAsset *asset = [_selectedAssets firstObject];
 			if (asset.isVideo) {
-				templateString = NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE_MULTIPLE_VIDEOS_SELECTION", @"OBAssetPicker", @"");
+				templateString = NSLocalizedStringFromTableInBundle(@"ASSET_PICKER_TITLE_MULTIPLE_VIDEOS_SELECTION", @"OBAssetPicker", resourceBundle, @"");
 			} else {
-				templateString = NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE_MULTIPLE_PHOTOS_SELECTION", @"OBAssetPicker", @"");
+				templateString = NSLocalizedStringFromTableInBundle(@"ASSET_PICKER_TITLE_MULTIPLE_PHOTOS_SELECTION", @"OBAssetPicker", resourceBundle, @"");
 			}
 		} else {
-			templateString = NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE_MULTIPLE_ITEMS_SELECTION", @"OBAssetPicker", @"");
+			templateString = NSLocalizedStringFromTableInBundle(@"ASSET_PICKER_TITLE_MULTIPLE_ITEMS_SELECTION", @"OBAssetPicker", resourceBundle, @"");
 		}
 
 		NSString *titleString = [NSString stringWithFormat:templateString, [@(count) stringValue]];
 		[self.navigationItem setTitle:titleString];
 	} else {
-		[self.navigationItem setTitle:NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE", @"OBAssetPicker", @"")];
+		[self.navigationItem setTitle:NSLocalizedStringFromTableInBundle(@"ASSET_PICKER_TITLE", @"OBAssetPicker", resourceBundle, @"")];
 	}
 
 	_doneButton.enabled = count > 0;

@@ -11,5 +11,6 @@
 @interface OBViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UISwitch *useCustomAssetCell;
 
 @end

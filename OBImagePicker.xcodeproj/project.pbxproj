@@ -8,43 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		355B202E8C9424AB51E3E1E7 /* UIBarButtonTestHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25B93D31ABAADB21E4A8 /* UIBarButtonTestHelper.m */; };
-		355B209A42D429ADE74F8D70 /* OBALCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2E78866E37AC77D6260B /* OBALCollection.m */; };
-		355B2151B0C5020A71798A7C /* OBALAssetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2E0BE4958046E93F9A6D /* OBALAssetLibrary.m */; };
-		355B21E6C39B5912BA7FD64C /* OBCollectionPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2B457FF92C718AF82237 /* OBCollectionPickerViewController.m */; };
 		355B224A07C8F5CE7A05B064 /* OBCollectionTableViewCellTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2529BF48C254D3E01E17 /* OBCollectionTableViewCellTest.m */; };
+		355B22F70ED327C5DF1B4608 /* ALAssetsGroupStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B29F7D10727667ADA7842 /* ALAssetsGroupStub.m */; };
 		355B237907292FD187731A77 /* Asset.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B25A49571CA13013382C1 /* Asset.png */; };
-		355B239E11BABD4EF873DCBF /* OBVideoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B2695A71E9EC5C329E546 /* OBVideoIcon@2x.png */; };
-		355B240C9FE4A4A101C5ED09 /* OBAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2B46D0D10E6CDDAF95CE /* OBAssetCollectionViewCell.m */; };
-		355B2428A3BBB40C33877AA8 /* OBAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2DE28D218FE9252840F5 /* OBAsset.m */; };
-		355B2708B440A0BEB1C19B74 /* OBAssertCheckedImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B27E3CE201AB176F2495F /* OBAssertCheckedImage@2x.png */; };
+		355B271BF24208FB89B795A7 /* OBTestAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2EFBAEAEE533B8531952 /* OBTestAssetCollectionViewCell.m */; };
 		355B2788ACE8C850FE6C7038 /* OBImagePickerViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B206AE3CF960CF4CB3557 /* OBImagePickerViewControllerTest.m */; };
 		355B279CAF82B7E9E0A8AB8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2FEDA47898552D73D172 /* main.m */; };
-		355B28656C7C437BA99ED2B8 /* OBVideoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B2E52C4BF2B9F104F4FCC /* OBVideoIcon.png */; };
-		355B286982E6DCD30322515B /* ALAssetsGroupStub.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25BFCE2CD317538751B7 /* ALAssetsGroupStub.m */; };
-		355B28C588667B247A7AF8A6 /* OBCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B22D399F0D29BCF3E7C44 /* OBCollection.m */; };
 		355B2A880F75E258876F1157 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355B20307C315B8F0A6087AE /* Images.xcassets */; };
-		355B2ADD71E858A121548BFC /* OBALAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2ABF7B61AB312641883E /* OBALAsset.m */; };
-		355B2AEE717CBFB1444D33F2 /* OBAssertCheckedImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B26D32CED01C0F7BDDC3D /* OBAssertCheckedImage.png */; };
-		355B2B37F24894F310BFB528 /* OBAssetPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25D9A0E3AF58DC0C335F /* OBAssetPickerViewController.m */; };
+		355B2B3D4E9DE6384067F60E /* OBCustomAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2ACEC6851675F683331F /* OBCustomAssetCollectionViewCell.m */; };
 		355B2B4987B180A366ED013C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355B2833AAD7DBDC96FCBB39 /* Main_iPad.storyboard */; };
 		355B2BBD34F2D21735DED359 /* OBCollectionPickerViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B205FB79AD573BD192FE8 /* OBCollectionPickerViewControllerTest.m */; };
-		355B2CA852827BE76FE6DB9F /* OBCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B28AFCB1F6F72C1DB2709 /* OBCollectionTableViewCell.m */; };
 		355B2CD81CC3F9EEA39532E1 /* OBAssetLibraryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2C437932D38DB2BCBE60 /* OBAssetLibraryTest.m */; };
 		355B2E8F2E09644F1C27B66A /* OBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2DD330CA0D695376CF1F /* OBAppDelegate.m */; };
 		355B2EA0B3571F351CB807BC /* TestNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B222FE8C18E7F347A6D03 /* TestNavigationController.m */; };
 		355B2F5DFFE39AAC3B16A2BF /* OBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2102D332CF711C0FD7AE /* OBViewController.m */; };
 		355B2F973C3A845557D42651 /* OBAssetPickerViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25B210C1C9EA30770699 /* OBAssetPickerViewControllerTest.m */; };
-		355B2FB8F08C456EDAAB9661 /* OBGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26214E8B3F8263E3A4A4 /* OBGradientView.m */; };
-		355B2FD6ADA73C07847D419E /* OBImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26C436704145F4ACF0BF /* OBImagePickerViewController.m */; };
+		A72E4D8E197953E200B80030 /* OBAssetPicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = A74D4C9019780473000A9991 /* OBAssetPicker.strings */; };
+		A72E4D8F197956CE00B80030 /* OBGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26214E8B3F8263E3A4A4 /* OBGradientView.m */; };
+		A72E4D90197956CE00B80030 /* OBCollectionPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2B457FF92C718AF82237 /* OBCollectionPickerViewController.m */; };
+		A72E4D91197956CE00B80030 /* OBCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B22D399F0D29BCF3E7C44 /* OBCollection.m */; };
+		A72E4D92197956CE00B80030 /* OBAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2DE28D218FE9252840F5 /* OBAsset.m */; };
+		A72E4D93197956CE00B80030 /* OBDefaultAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2B46D0D10E6CDDAF95CE /* OBDefaultAssetCollectionViewCell.m */; };
+		A72E4D94197956CE00B80030 /* OBCollectionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B28AFCB1F6F72C1DB2709 /* OBCollectionTableViewCell.m */; };
+		A72E4D95197956CE00B80030 /* OBAssetPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B25D9A0E3AF58DC0C335F /* OBAssetPickerViewController.m */; };
 		A74D4C571978017B000A9991 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74D4C561978017B000A9991 /* Foundation.framework */; };
 		A74D4C591978017B000A9991 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74D4C581978017B000A9991 /* CoreGraphics.framework */; };
 		A74D4C5B1978017B000A9991 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74D4C5A1978017B000A9991 /* UIKit.framework */; };
-		A74D4C8E19780473000A9991 /* OBAssetPicker.strings in Resources */ = {isa = PBXBuildFile; fileRef = A74D4C9019780473000A9991 /* OBAssetPicker.strings */; };
 		A74D4CAA19780655000A9991 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74D4CA919780655000A9991 /* Main_iPhone.storyboard */; };
 		A74D4CB219780B2B000A9991 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74D4C781978017B000A9991 /* XCTest.framework */; };
 		A74D4CB319780B2B000A9991 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74D4C561978017B000A9991 /* Foundation.framework */; };
 		A74D4CB419780B2B000A9991 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A74D4C5A1978017B000A9991 /* UIKit.framework */; };
 		A74D4CBA19780B2B000A9991 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A74D4CB819780B2B000A9991 /* InfoPlist.strings */; };
+		A7CB0B0E197916370058BE4E /* OBAssetCheckedImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B26D32CED01C0F7BDDC3D /* OBAssetCheckedImage.png */; };
+		A7CB0B0F1979163B0058BE4E /* OBAssetCheckedImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B27E3CE201AB176F2495F /* OBAssetCheckedImage@2x.png */; };
+		A7CB0B101979163E0058BE4E /* OBVideoIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B2E52C4BF2B9F104F4FCC /* OBVideoIcon.png */; };
+		A7CB0B11197916420058BE4E /* OBVideoIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355B2695A71E9EC5C329E546 /* OBVideoIcon@2x.png */; };
+		A7CB0B17197916620058BE4E /* libOBImagePicker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A7CB0AEC197915E10058BE4E /* libOBImagePicker.a */; };
+		A7CB0B181979167F0058BE4E /* OBImagePicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A7CB0B071979161E0058BE4E /* OBImagePicker.bundle */; };
+		A7CB0B21197D0AB10058BE4E /* OBALAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2ABF7B61AB312641883E /* OBALAsset.m */; };
+		A7CB0B22197D0AB40058BE4E /* OBALCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2E78866E37AC77D6260B /* OBALCollection.m */; };
+		A7CB0B23197D0AB70058BE4E /* OBALAssetLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B2E0BE4958046E93F9A6D /* OBALAssetLibrary.m */; };
+		A7CB0B24197D0ABB0058BE4E /* OBAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B230DBA81AAAFD8B1C824 /* OBAssetCollectionViewCell.m */; };
+		A7CB0B25197D0ACA0058BE4E /* OBImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26C436704145F4ACF0BF /* OBImagePickerViewController.m */; };
 		CD8DDC2E98944E06935A6BE5 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B41F99B79040462185334385 /* libPods-Tests.a */; };
 /* End PBXBuildFile section */
 
@@ -56,16 +61,56 @@
 			remoteGlobalIDString = A74D4C521978017B000A9991;
 			remoteInfo = OBImagePicker;
 		};
+		A7CB0B13197916570058BE4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A74D4C4B1978017B000A9991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7CB0AEB197915E10058BE4E;
+			remoteInfo = "Static Library";
+		};
+		A7CB0B15197916590058BE4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A74D4C4B1978017B000A9991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7CB0B061979161E0058BE4E;
+			remoteInfo = "Resource Bundle";
+		};
+		A7CB0B19197918F50058BE4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A74D4C4B1978017B000A9991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A74D4C521978017B000A9991;
+			remoteInfo = "Demo App";
+		};
+		A7CB0B1B197918F50058BE4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A74D4C4B1978017B000A9991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A74D4C521978017B000A9991;
+			remoteInfo = "Demo App";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A7CB0AEA197915E10058BE4E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		355B201F6357B788ED1679D3 /* ALAssetsGroupStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAssetsGroupStub.h; sourceTree = "<group>"; };
 		355B20307C315B8F0A6087AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		355B205FB79AD573BD192FE8 /* OBCollectionPickerViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCollectionPickerViewControllerTest.m; sourceTree = "<group>"; };
 		355B206AE3CF960CF4CB3557 /* OBImagePickerViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBImagePickerViewControllerTest.m; sourceTree = "<group>"; };
 		355B2102D332CF711C0FD7AE /* OBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBViewController.m; sourceTree = "<group>"; };
 		355B222FE8C18E7F347A6D03 /* TestNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestNavigationController.m; sourceTree = "<group>"; };
 		355B22D399F0D29BCF3E7C44 /* OBCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCollection.m; sourceTree = "<group>"; };
+		355B230DBA81AAAFD8B1C824 /* OBAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAssetCollectionViewCell.m; sourceTree = "<group>"; };
 		355B2407D2D75C1EF5704348 /* OBAssetLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAssetLibrary.h; sourceTree = "<group>"; };
 		355B248F5EF7D0CE3CAABC77 /* OBImagePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBImagePickerViewController.h; sourceTree = "<group>"; };
 		355B2529BF48C254D3E01E17 /* OBCollectionTableViewCellTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCollectionTableViewCellTest.m; sourceTree = "<group>"; };
@@ -73,28 +118,32 @@
 		355B25A49571CA13013382C1 /* Asset.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Asset.png; sourceTree = "<group>"; };
 		355B25B210C1C9EA30770699 /* OBAssetPickerViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAssetPickerViewControllerTest.m; sourceTree = "<group>"; };
 		355B25B93D31ABAADB21E4A8 /* UIBarButtonTestHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIBarButtonTestHelper.m; sourceTree = "<group>"; };
-		355B25BFCE2CD317538751B7 /* ALAssetsGroupStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAssetsGroupStub.m; sourceTree = "<group>"; };
 		355B25D9A0E3AF58DC0C335F /* OBAssetPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAssetPickerViewController.m; sourceTree = "<group>"; };
 		355B26214E8B3F8263E3A4A4 /* OBGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBGradientView.m; sourceTree = "<group>"; };
 		355B26887F8D66187FABDE3B /* OBCollectionTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCollectionTableViewCell.h; sourceTree = "<group>"; };
 		355B2695A71E9EC5C329E546 /* OBVideoIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OBVideoIcon@2x.png"; sourceTree = "<group>"; };
 		355B26C436704145F4ACF0BF /* OBImagePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBImagePickerViewController.m; sourceTree = "<group>"; };
-		355B26D32CED01C0F7BDDC3D /* OBAssertCheckedImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OBAssertCheckedImage.png; sourceTree = "<group>"; };
+		355B26D32CED01C0F7BDDC3D /* OBAssetCheckedImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OBAssetCheckedImage.png; sourceTree = "<group>"; };
 		355B26D4891E63208A0F135F /* OBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAppDelegate.h; sourceTree = "<group>"; };
 		355B27063BE8CF4F9A22BD22 /* OBALCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBALCollection.h; sourceTree = "<group>"; };
+		355B272E7B7862D900D8C4BF /* OBCustomAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCustomAssetCollectionViewCell.h; sourceTree = "<group>"; };
 		355B274ADC9742AE62045BD1 /* OBAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAsset.h; sourceTree = "<group>"; };
 		355B279CB36258F7EFE7C957 /* OBAssetPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAssetPickerViewController.h; sourceTree = "<group>"; };
 		355B27A9B56E74107EC4B3DE /* OBAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAsset.h; sourceTree = "<group>"; };
-		355B27E3CE201AB176F2495F /* OBAssertCheckedImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OBAssertCheckedImage@2x.png"; sourceTree = "<group>"; };
+		355B27E3CE201AB176F2495F /* OBAssetCheckedImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OBAssetCheckedImage@2x.png"; sourceTree = "<group>"; };
 		355B2833AAD7DBDC96FCBB39 /* Main_iPad.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main_iPad.storyboard; sourceTree = "<group>"; };
 		355B28AFCB1F6F72C1DB2709 /* OBCollectionTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCollectionTableViewCell.m; sourceTree = "<group>"; };
 		355B28F7ADA388F549ABE0C4 /* OBALAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBALAsset.h; sourceTree = "<group>"; };
 		355B295D53C58FB294BF5B90 /* OBALAssetLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBALAssetLibrary.h; sourceTree = "<group>"; };
+		355B29F7D10727667ADA7842 /* ALAssetsGroupStub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAssetsGroupStub.m; sourceTree = "<group>"; };
 		355B2A7EDB21D25B5ED49D58 /* OBCollectionPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCollectionPickerViewController.h; sourceTree = "<group>"; };
+		355B2AA55CCDE9D764FF3806 /* OBAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAssetCollectionViewCell.h; sourceTree = "<group>"; };
 		355B2ABF7B61AB312641883E /* OBALAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBALAsset.m; sourceTree = "<group>"; };
-		355B2B3088DE859A864B41A7 /* OBAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBAssetCollectionViewCell.h; sourceTree = "<group>"; };
+		355B2ACEC6851675F683331F /* OBCustomAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCustomAssetCollectionViewCell.m; sourceTree = "<group>"; };
+		355B2B3088DE859A864B41A7 /* OBDefaultAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBDefaultAssetCollectionViewCell.h; sourceTree = "<group>"; };
 		355B2B457FF92C718AF82237 /* OBCollectionPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCollectionPickerViewController.m; sourceTree = "<group>"; };
-		355B2B46D0D10E6CDDAF95CE /* OBAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAssetCollectionViewCell.m; sourceTree = "<group>"; };
+		355B2B46D0D10E6CDDAF95CE /* OBDefaultAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBDefaultAssetCollectionViewCell.m; sourceTree = "<group>"; };
+		355B2BE4085B204DE75463F3 /* OBTestAssetCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBTestAssetCollectionViewCell.h; sourceTree = "<group>"; };
 		355B2C437932D38DB2BCBE60 /* OBAssetLibraryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBAssetLibraryTest.m; sourceTree = "<group>"; };
 		355B2C8737E1C9ABBD3B5AB2 /* OBImagePicker-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OBImagePicker-Prefix.pch"; sourceTree = "<group>"; };
 		355B2D7C4F16E1701ADCE47C /* UIBarButtonTestHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIBarButtonTestHelper.h; sourceTree = "<group>"; };
@@ -103,12 +152,16 @@
 		355B2E0BE4958046E93F9A6D /* OBALAssetLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBALAssetLibrary.m; sourceTree = "<group>"; };
 		355B2E13DF9A5083AA669B07 /* OBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBViewController.h; sourceTree = "<group>"; };
 		355B2E52C4BF2B9F104F4FCC /* OBVideoIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = OBVideoIcon.png; sourceTree = "<group>"; };
+		355B2E6C36B55233C1FDFA0B /* ALAssetsGroupStub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAssetsGroupStub.h; sourceTree = "<group>"; };
 		355B2E78866E37AC77D6260B /* OBALCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBALCollection.m; sourceTree = "<group>"; };
+		355B2EFBAEAEE533B8531952 /* OBTestAssetCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBTestAssetCollectionViewCell.m; sourceTree = "<group>"; };
 		355B2F2502A145B33B338C70 /* TestNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestNavigationController.h; sourceTree = "<group>"; };
 		355B2FB07023020DF34C59CB /* OBCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCollection.h; sourceTree = "<group>"; };
 		355B2FEDA47898552D73D172 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		355B2FEED1B037F5FD2E3522 /* OBImagePicker-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.info; path = "OBImagePicker-Info.plist"; sourceTree = "<group>"; };
 		8B909DAB653D4A3CB7E2970A /* Pods-Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.xcconfig"; path = "Pods/Pods-Tests.xcconfig"; sourceTree = "<group>"; };
+		A72E4D8C1979534A00B80030 /* Resources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Resources-Info.plist"; sourceTree = "<group>"; };
+		A72E4D961979575C00B80030 /* OBImagePicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OBImagePicker-Prefix.pch"; sourceTree = "<group>"; };
 		A74D4C531978017B000A9991 /* OBImagePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OBImagePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74D4C561978017B000A9991 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A74D4C581978017B000A9991 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +185,8 @@
 		A74D4CB719780B2B000A9991 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		A74D4CB919780B2B000A9991 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A74D4CBD19780B2B000A9991 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		A7CB0AEC197915E10058BE4E /* libOBImagePicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOBImagePicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7CB0B071979161E0058BE4E /* OBImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OBImagePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41F99B79040462185334385 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -140,6 +195,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CB0B17197916620058BE4E /* libOBImagePicker.a in Frameworks */,
 				A74D4C591978017B000A9991 /* CoreGraphics.framework in Frameworks */,
 				A74D4C5B1978017B000A9991 /* UIKit.framework in Frameworks */,
 				A74D4C571978017B000A9991 /* Foundation.framework in Frameworks */,
@@ -154,6 +210,20 @@
 				A74D4CB419780B2B000A9991 /* UIKit.framework in Frameworks */,
 				A74D4CB319780B2B000A9991 /* Foundation.framework in Frameworks */,
 				CD8DDC2E98944E06935A6BE5 /* libPods-Tests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7CB0AE9197915E10058BE4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7CB0B041979161E0058BE4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,10 +257,10 @@
 				355B27A9B56E74107EC4B3DE /* OBAsset.h */,
 				355B28F7ADA388F549ABE0C4 /* OBALAsset.h */,
 				355B2ABF7B61AB312641883E /* OBALAsset.m */,
-				355B27063BE8CF4F9A22BD22 /* OBALCollection.h */,
-				355B2E78866E37AC77D6260B /* OBALCollection.m */,
 				355B295D53C58FB294BF5B90 /* OBALAssetLibrary.h */,
 				355B2E0BE4958046E93F9A6D /* OBALAssetLibrary.m */,
+				355B27063BE8CF4F9A22BD22 /* OBALCollection.h */,
+				355B2E78866E37AC77D6260B /* OBALCollection.m */,
 			);
 			path = ALAsset;
 			sourceTree = "<group>";
@@ -198,11 +268,12 @@
 		355B25C714FB6FF28AB7CE12 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				355B26D32CED01C0F7BDDC3D /* OBAssertCheckedImage.png */,
-				355B2E52C4BF2B9F104F4FCC /* OBVideoIcon.png */,
-				355B27E3CE201AB176F2495F /* OBAssertCheckedImage@2x.png */,
-				355B2695A71E9EC5C329E546 /* OBVideoIcon@2x.png */,
+				A72E4D8C1979534A00B80030 /* Resources-Info.plist */,
+				355B26D32CED01C0F7BDDC3D /* OBAssetCheckedImage.png */,
+				355B27E3CE201AB176F2495F /* OBAssetCheckedImage@2x.png */,
 				A74D4C9019780473000A9991 /* OBAssetPicker.strings */,
+				355B2E52C4BF2B9F104F4FCC /* OBVideoIcon.png */,
+				355B2695A71E9EC5C329E546 /* OBVideoIcon@2x.png */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -214,10 +285,9 @@
 				355B2529BF48C254D3E01E17 /* OBCollectionTableViewCellTest.m */,
 				355B2C437932D38DB2BCBE60 /* OBAssetLibraryTest.m */,
 				355B206AE3CF960CF4CB3557 /* OBImagePickerViewControllerTest.m */,
-				355B25BFCE2CD317538751B7 /* ALAssetsGroupStub.m */,
 				355B25B210C1C9EA30770699 /* OBAssetPickerViewControllerTest.m */,
-				355B201F6357B788ED1679D3 /* ALAssetsGroupStub.h */,
 				355B2D5AB22D40940648A9F4 /* Helpers */,
+				355B2D2322439044787F5D24 /* Stubs */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -225,23 +295,25 @@
 		355B274424A7824ECE100DF7 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				355B2A7EDB21D25B5ED49D58 /* OBCollectionPickerViewController.h */,
-				355B26887F8D66187FABDE3B /* OBCollectionTableViewCell.h */,
-				355B26C436704145F4ACF0BF /* OBImagePickerViewController.m */,
-				355B2FB07023020DF34C59CB /* OBCollection.h */,
 				355B274ADC9742AE62045BD1 /* OBAsset.h */,
-				355B2B3088DE859A864B41A7 /* OBAssetCollectionViewCell.h */,
-				355B26214E8B3F8263E3A4A4 /* OBGradientView.m */,
-				355B2B457FF92C718AF82237 /* OBCollectionPickerViewController.m */,
-				355B248F5EF7D0CE3CAABC77 /* OBImagePickerViewController.h */,
-				355B22D399F0D29BCF3E7C44 /* OBCollection.m */,
 				355B2DE28D218FE9252840F5 /* OBAsset.m */,
-				355B25A4532088679D16224B /* OBGradientView.h */,
-				355B279CB36258F7EFE7C957 /* OBAssetPickerViewController.h */,
-				355B2B46D0D10E6CDDAF95CE /* OBAssetCollectionViewCell.m */,
+				355B2AA55CCDE9D764FF3806 /* OBAssetCollectionViewCell.h */,
+				355B230DBA81AAAFD8B1C824 /* OBAssetCollectionViewCell.m */,
 				355B2407D2D75C1EF5704348 /* OBAssetLibrary.h */,
-				355B28AFCB1F6F72C1DB2709 /* OBCollectionTableViewCell.m */,
 				355B25D9A0E3AF58DC0C335F /* OBAssetPickerViewController.m */,
+				355B279CB36258F7EFE7C957 /* OBAssetPickerViewController.h */,
+				355B2FB07023020DF34C59CB /* OBCollection.h */,
+				355B22D399F0D29BCF3E7C44 /* OBCollection.m */,
+				355B2A7EDB21D25B5ED49D58 /* OBCollectionPickerViewController.h */,
+				355B2B457FF92C718AF82237 /* OBCollectionPickerViewController.m */,
+				355B26887F8D66187FABDE3B /* OBCollectionTableViewCell.h */,
+				355B28AFCB1F6F72C1DB2709 /* OBCollectionTableViewCell.m */,
+				355B2B3088DE859A864B41A7 /* OBDefaultAssetCollectionViewCell.h */,
+				355B2B46D0D10E6CDDAF95CE /* OBDefaultAssetCollectionViewCell.m */,
+				355B26214E8B3F8263E3A4A4 /* OBGradientView.m */,
+				355B25A4532088679D16224B /* OBGradientView.h */,
+				355B248F5EF7D0CE3CAABC77 /* OBImagePickerViewController.h */,
+				355B26C436704145F4ACF0BF /* OBImagePickerViewController.m */,
 				355B25657C6DA6C854AE880C /* ALAsset */,
 			);
 			path = Source;
@@ -250,6 +322,7 @@
 		355B2B20A5A3A05199685BCF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				A72E4D961979575C00B80030 /* OBImagePicker-Prefix.pch */,
 				355B274424A7824ECE100DF7 /* Source */,
 				355B25C714FB6FF28AB7CE12 /* Resource */,
 			);
@@ -272,8 +345,19 @@
 				355B26D4891E63208A0F135F /* OBAppDelegate.h */,
 				355B2DD330CA0D695376CF1F /* OBAppDelegate.m */,
 				355B2FEDA47898552D73D172 /* main.m */,
+				355B2ACEC6851675F683331F /* OBCustomAssetCollectionViewCell.m */,
+				355B272E7B7862D900D8C4BF /* OBCustomAssetCollectionViewCell.h */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		355B2D2322439044787F5D24 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				355B29F7D10727667ADA7842 /* ALAssetsGroupStub.m */,
+				355B2E6C36B55233C1FDFA0B /* ALAssetsGroupStub.h */,
+			);
+			path = Stubs;
 			sourceTree = "<group>";
 		};
 		355B2D5AB22D40940648A9F4 /* Helpers */ = {
@@ -283,6 +367,8 @@
 				355B2D7C4F16E1701ADCE47C /* UIBarButtonTestHelper.h */,
 				355B2F2502A145B33B338C70 /* TestNavigationController.h */,
 				355B222FE8C18E7F347A6D03 /* TestNavigationController.m */,
+				355B2EFBAEAEE533B8531952 /* OBTestAssetCollectionViewCell.m */,
+				355B2BE4085B204DE75463F3 /* OBTestAssetCollectionViewCell.h */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -292,7 +378,6 @@
 			children = (
 				355B2B20A5A3A05199685BCF /* Core */,
 				355B20BE8C904BD30AA77521 /* Demo */,
-				A74D4C7E1978017B000A9991 /* OBImagePickerTests */,
 				A74D4CB519780B2B000A9991 /* Tests */,
 				A74D4C551978017B000A9991 /* Frameworks */,
 				A74D4C541978017B000A9991 /* Products */,
@@ -305,6 +390,8 @@
 			children = (
 				A74D4C531978017B000A9991 /* OBImagePicker.app */,
 				A74D4CB119780B2B000A9991 /* Tests.xctest */,
+				A7CB0AEC197915E10058BE4E /* libOBImagePicker.a */,
+				A7CB0B071979161E0058BE4E /* OBImagePicker.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -319,21 +406,6 @@
 				B41F99B79040462185334385 /* libPods-Tests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A74D4C7E1978017B000A9991 /* OBImagePickerTests */ = {
-			isa = PBXGroup;
-			children = (
-				A74D4C7F1978017B000A9991 /* Supporting Files */,
-			);
-			path = OBImagePickerTests;
-			sourceTree = "<group>";
-		};
-		A74D4C7F1978017B000A9991 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A74D4CB519780B2B000A9991 /* Tests */ = {
@@ -359,9 +431,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A74D4C521978017B000A9991 /* OBImagePicker */ = {
+		A74D4C521978017B000A9991 /* Demo App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A74D4C881978017B000A9991 /* Build configuration list for PBXNativeTarget "OBImagePicker" */;
+			buildConfigurationList = A74D4C881978017B000A9991 /* Build configuration list for PBXNativeTarget "Demo App" */;
 			buildPhases = (
 				A74D4C4F1978017B000A9991 /* Sources */,
 				A74D4C501978017B000A9991 /* Frameworks */,
@@ -370,8 +442,10 @@
 			buildRules = (
 			);
 			dependencies = (
+				A7CB0B16197916590058BE4E /* PBXTargetDependency */,
+				A7CB0B14197916570058BE4E /* PBXTargetDependency */,
 			);
-			name = OBImagePicker;
+			name = "Demo App";
 			productName = OBImagePicker;
 			productReference = A74D4C531978017B000A9991 /* OBImagePicker.app */;
 			productType = "com.apple.product-type.application";
@@ -390,11 +464,47 @@
 			);
 			dependencies = (
 				A74D4CBF19780B2B000A9991 /* PBXTargetDependency */,
+				A7CB0B1A197918F50058BE4E /* PBXTargetDependency */,
+				A7CB0B1C197918F50058BE4E /* PBXTargetDependency */,
 			);
 			name = Tests;
 			productName = Tests;
 			productReference = A74D4CB119780B2B000A9991 /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7CB0AEB197915E10058BE4E /* Static Library */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7CB0AFD197915E10058BE4E /* Build configuration list for PBXNativeTarget "Static Library" */;
+			buildPhases = (
+				A7CB0AE8197915E10058BE4E /* Sources */,
+				A7CB0AE9197915E10058BE4E /* Frameworks */,
+				A7CB0AEA197915E10058BE4E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Static Library";
+			productName = OBImagePicker;
+			productReference = A7CB0AEC197915E10058BE4E /* libOBImagePicker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A7CB0B061979161E0058BE4E /* Resource Bundle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7CB0B0B1979161E0058BE4E /* Build configuration list for PBXNativeTarget "Resource Bundle" */;
+			buildPhases = (
+				A7CB0B031979161E0058BE4E /* Sources */,
+				A7CB0B041979161E0058BE4E /* Frameworks */,
+				A7CB0B051979161E0058BE4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Resource Bundle";
+			productName = "Resource Bundle";
+			productReference = A7CB0B071979161E0058BE4E /* OBImagePicker.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -408,6 +518,12 @@
 				TargetAttributes = {
 					A74D4CB019780B2B000A9991 = {
 						TestTargetID = A74D4C521978017B000A9991;
+					};
+					A7CB0AEB197915E10058BE4E = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					A7CB0B061979161E0058BE4E = {
+						CreatedOnToolsVersion = 6.0;
 					};
 				};
 			};
@@ -434,12 +550,12 @@
 			mainGroup = A74D4C4A1978017B000A9991;
 			productRefGroup = A74D4C541978017B000A9991 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
-				A74D4C521978017B000A9991 /* OBImagePicker */,
+				A74D4C521978017B000A9991 /* Demo App */,
 				A74D4CB019780B2B000A9991 /* Tests */,
+				A7CB0AEB197915E10058BE4E /* Static Library */,
+				A7CB0B061979161E0058BE4E /* Resource Bundle */,
 			);
 		};
 /* End PBXProject section */
@@ -449,13 +565,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7CB0B181979167F0058BE4E /* OBImagePicker.bundle in Resources */,
 				A74D4CAA19780655000A9991 /* Main_iPhone.storyboard in Resources */,
 				355B2A880F75E258876F1157 /* Images.xcassets in Resources */,
-				355B2AEE717CBFB1444D33F2 /* OBAssertCheckedImage.png in Resources */,
-				355B28656C7C437BA99ED2B8 /* OBVideoIcon.png in Resources */,
-				355B2708B440A0BEB1C19B74 /* OBAssertCheckedImage@2x.png in Resources */,
-				355B239E11BABD4EF873DCBF /* OBVideoIcon@2x.png in Resources */,
-				A74D4C8E19780473000A9991 /* OBAssetPicker.strings in Resources */,
 				355B2B4987B180A366ED013C /* Main_iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +578,18 @@
 			files = (
 				A74D4CBA19780B2B000A9991 /* InfoPlist.strings in Resources */,
 				355B237907292FD187731A77 /* Asset.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7CB0B051979161E0058BE4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7CB0B11197916420058BE4E /* OBVideoIcon@2x.png in Resources */,
+				A7CB0B0E197916370058BE4E /* OBAssetCheckedImage.png in Resources */,
+				A7CB0B101979163E0058BE4E /* OBVideoIcon.png in Resources */,
+				A72E4D8E197953E200B80030 /* OBAssetPicker.strings in Resources */,
+				A7CB0B0F1979163B0058BE4E /* OBAssetCheckedImage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -512,17 +636,8 @@
 				355B2F5DFFE39AAC3B16A2BF /* OBViewController.m in Sources */,
 				355B2E8F2E09644F1C27B66A /* OBAppDelegate.m in Sources */,
 				355B279CAF82B7E9E0A8AB8C /* main.m in Sources */,
-				355B2FD6ADA73C07847D419E /* OBImagePickerViewController.m in Sources */,
-				355B2FB8F08C456EDAAB9661 /* OBGradientView.m in Sources */,
-				355B21E6C39B5912BA7FD64C /* OBCollectionPickerViewController.m in Sources */,
-				355B28C588667B247A7AF8A6 /* OBCollection.m in Sources */,
-				355B2428A3BBB40C33877AA8 /* OBAsset.m in Sources */,
-				355B240C9FE4A4A101C5ED09 /* OBAssetCollectionViewCell.m in Sources */,
-				355B2CA852827BE76FE6DB9F /* OBCollectionTableViewCell.m in Sources */,
-				355B2B37F24894F310BFB528 /* OBAssetPickerViewController.m in Sources */,
-				355B2ADD71E858A121548BFC /* OBALAsset.m in Sources */,
-				355B209A42D429ADE74F8D70 /* OBALCollection.m in Sources */,
-				355B2151B0C5020A71798A7C /* OBALAssetLibrary.m in Sources */,
+				355B271BF24208FB89B795A7 /* OBTestAssetCollectionViewCell.m in Sources */,
+				355B2B3D4E9DE6384067F60E /* OBCustomAssetCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,8 +651,34 @@
 				355B2BBD34F2D21735DED359 /* OBCollectionPickerViewControllerTest.m in Sources */,
 				355B2CD81CC3F9EEA39532E1 /* OBAssetLibraryTest.m in Sources */,
 				355B2F973C3A845557D42651 /* OBAssetPickerViewControllerTest.m in Sources */,
-				355B286982E6DCD30322515B /* ALAssetsGroupStub.m in Sources */,
 				355B2788ACE8C850FE6C7038 /* OBImagePickerViewControllerTest.m in Sources */,
+				355B22F70ED327C5DF1B4608 /* ALAssetsGroupStub.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7CB0AE8197915E10058BE4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7CB0B22197D0AB40058BE4E /* OBALCollection.m in Sources */,
+				A72E4D94197956CE00B80030 /* OBCollectionTableViewCell.m in Sources */,
+				A72E4D95197956CE00B80030 /* OBAssetPickerViewController.m in Sources */,
+				A72E4D8F197956CE00B80030 /* OBGradientView.m in Sources */,
+				A72E4D93197956CE00B80030 /* OBDefaultAssetCollectionViewCell.m in Sources */,
+				A7CB0B25197D0ACA0058BE4E /* OBImagePickerViewController.m in Sources */,
+				A7CB0B21197D0AB10058BE4E /* OBALAsset.m in Sources */,
+				A72E4D92197956CE00B80030 /* OBAsset.m in Sources */,
+				A72E4D90197956CE00B80030 /* OBCollectionPickerViewController.m in Sources */,
+				A7CB0B23197D0AB70058BE4E /* OBALAssetLibrary.m in Sources */,
+				A72E4D91197956CE00B80030 /* OBCollection.m in Sources */,
+				A7CB0B24197D0ABB0058BE4E /* OBAssetCollectionViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7CB0B031979161E0058BE4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,8 +687,28 @@
 /* Begin PBXTargetDependency section */
 		A74D4CBF19780B2B000A9991 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A74D4C521978017B000A9991 /* OBImagePicker */;
+			target = A74D4C521978017B000A9991 /* Demo App */;
 			targetProxy = A74D4CBE19780B2B000A9991 /* PBXContainerItemProxy */;
+		};
+		A7CB0B14197916570058BE4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7CB0AEB197915E10058BE4E /* Static Library */;
+			targetProxy = A7CB0B13197916570058BE4E /* PBXContainerItemProxy */;
+		};
+		A7CB0B16197916590058BE4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7CB0B061979161E0058BE4E /* Resource Bundle */;
+			targetProxy = A7CB0B15197916590058BE4E /* PBXContainerItemProxy */;
+		};
+		A7CB0B1A197918F50058BE4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A74D4C521978017B000A9991 /* Demo App */;
+			targetProxy = A7CB0B19197918F50058BE4E /* PBXContainerItemProxy */;
+		};
+		A7CB0B1C197918F50058BE4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A74D4C521978017B000A9991 /* Demo App */;
+			targetProxy = A7CB0B1B197918F50058BE4E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -615,7 +776,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -648,7 +809,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -660,10 +821,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/OBImagePicker-Prefix.pch";
 				INFOPLIST_FILE = "Demo/OBImagePicker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = OBImagePicker;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -673,10 +836,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/OBImagePicker-Prefix.pch";
 				INFOPLIST_FILE = "Demo/OBImagePicker-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = OBImagePicker;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -723,6 +888,71 @@
 			};
 			name = Release;
 		};
+		A7CB0AFE197915E10058BE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Core/OBImagePicker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = OBImagePicker;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A7CB0AFF197915E10058BE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Core/OBImagePicker-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = OBImagePicker;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		A7CB0B0C1979161E0058BE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Core/Resource/Resources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = OBImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A7CB0B0D1979161E0058BE4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Core/Resource/Resources-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = OBImagePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -735,7 +965,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A74D4C881978017B000A9991 /* Build configuration list for PBXNativeTarget "OBImagePicker" */ = {
+		A74D4C881978017B000A9991 /* Build configuration list for PBXNativeTarget "Demo App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A74D4C891978017B000A9991 /* Debug */,
@@ -751,6 +981,25 @@
 				A74D4CC219780B2B000A9991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7CB0AFD197915E10058BE4E /* Build configuration list for PBXNativeTarget "Static Library" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7CB0AFE197915E10058BE4E /* Debug */,
+				A7CB0AFF197915E10058BE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7CB0B0B1979161E0058BE4E /* Build configuration list for PBXNativeTarget "Resource Bundle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7CB0B0C1979161E0058BE4E /* Debug */,
+				A7CB0B0D1979161E0058BE4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

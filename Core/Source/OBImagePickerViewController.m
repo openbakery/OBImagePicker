@@ -11,13 +11,16 @@
 #import "OBALAssetLibrary.h"
 #import "OBAssetLibrary.h"
 #import "OBAssetPickerViewController.h"
+#import "OBAssetCollectionViewCell.h"
+#import "OBDefaultAssetCollectionViewCell.h"
 
 
 @implementation OBImagePickerViewController {
 
+	Class _registeredAssetCellClass;
 }
 
-- (instancetype)initWithLibrary:(id<OBAssetLibrary>)library selectionHandler:(OBAssertPickerSelectionHandlerBlock)selectionHandler errorHandler:(OBAssertPickerErrorHandlerBlock)errorHandler {
+- (instancetype)initWithLibrary:(id<OBAssetLibrary>)library selectionHandler:(OBAssetPickerSelectionHandlerBlock)selectionHandler errorHandler:(OBAssetPickerErrorHandlerBlock)errorHandler {
 	OBCollectionPickerViewController *collectionPickerViewController = [[OBCollectionPickerViewController alloc] initWithLibrary:library];
 	collectionPickerViewController.selectionHandler = selectionHandler;
 	collectionPickerViewController.errorHandler = errorHandler;
@@ -42,5 +45,16 @@
 	}
 }
 
+- (void)registerAssetCellClass:(Class)cellClass {
+	NSAssert([cellClass isSubclassOfClass:[OBAssetCollectionViewCell class]], @"Cell class must derive from OBAssetCollectionViewCell");
+	_registeredAssetCellClass = cellClass;
+}
+
+- (Class)registeredAssetCellClass {
+	if (_registeredAssetCellClass) {
+		return _registeredAssetCellClass;
+	}
+	return [OBDefaultAssetCollectionViewCell class];
+}
 
 @end

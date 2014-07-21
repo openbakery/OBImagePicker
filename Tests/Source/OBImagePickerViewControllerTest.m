@@ -45,7 +45,7 @@
 
 - (void)testSelectionHandlerBlock {
 	__block BOOL blockExecuted = NO;
-	OBAssertPickerSelectionHandlerBlock selectionHandler = ^(NSArray *assets, OBImagePickerViewController *controller) {
+	OBAssetPickerSelectionHandlerBlock selectionHandler = ^(NSArray *assets, OBImagePickerViewController *controller) {
 	    blockExecuted = YES;
 	};
 
@@ -63,7 +63,7 @@
 
 - (void)testErrorHandlerBlock {
 	__block BOOL blockExecuted = NO;
-	OBAssertPickerErrorHandlerBlock errorHandlerBlock = ^(NSError *error, OBImagePickerViewController *controller) {
+	OBAssetPickerErrorHandlerBlock errorHandlerBlock = ^(NSError *error, OBImagePickerViewController *controller) {
 	    blockExecuted = YES;
 	};
 

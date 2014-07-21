@@ -13,10 +13,8 @@
 
 @interface OBAssetCollectionViewCell : UICollectionViewCell
 
-
 @property (nonatomic, strong) OBAsset *asset;
 
+
 @property (nonatomic, strong) UIImageView *imageView;
-
-
 @end

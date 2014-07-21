@@ -20,8 +20,8 @@
 
 @property(nonatomic, strong) OBCollection *collection;
 
-@property(nonatomic, strong) OBAssertPickerSelectionHandlerBlock selectionHandler;
-@property(nonatomic, strong) OBAssertPickerErrorHandlerBlock errorHandler;
+@property(nonatomic, strong) OBAssetPickerSelectionHandlerBlock selectionHandler;
+@property(nonatomic, strong) OBAssetPickerErrorHandlerBlock errorHandler;
 
 - (instancetype)initWithCollection:(OBCollection *)collection;
 

@@ -11,6 +11,7 @@
 #import "OBALCollection.h"
 #import "OBALAssetLibrary.h"
 #import "OBAsset.h"
+#import "OBCustomAssetCollectionViewCell.h"
 
 @interface OBViewController ()
 
@@ -23,7 +24,7 @@
 	OBALAssetLibrary *library = [[OBALAssetLibrary alloc] initWithType:OBAssetLibraryTypeAll];
 
 	__weak OBViewController *weakSelf = self;
-	OBAssertPickerSelectionHandlerBlock selectionHandler = ^(NSArray *assets, OBImagePickerViewController *controller) {
+	OBAssetPickerSelectionHandlerBlock selectionHandler = ^(NSArray *assets, OBImagePickerViewController *controller) {
 	    if ([assets count]) {
 		    OBAsset *firstAsset = [assets firstObject];
 		    if (firstAsset.isPhoto) {
@@ -34,6 +35,11 @@
 
 	};
 	OBImagePickerViewController *imagePickerViewController = [[OBImagePickerViewController alloc] initWithLibrary:library selectionHandler:selectionHandler errorHandler:nil];
+
+	if (self.useCustomAssetCell.on) {
+		[imagePickerViewController registerAssetCellClass:[OBCustomAssetCollectionViewCell class]];
+	}
+
 	imagePickerViewController.selectionMode = selectionMode;
 
 	[self presentViewController:imagePickerViewController animated:YES completion:nil];
