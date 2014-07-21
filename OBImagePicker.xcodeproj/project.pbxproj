@@ -457,8 +457,6 @@
 			mainGroup = A74D4C4A1978017B000A9991;
 			productRefGroup = A74D4C541978017B000A9991 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-			);
 			projectRoot = "";
 			targets = (
 				A74D4C521978017B000A9991 /* OBImagePicker */,
@@ -686,6 +684,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/OBImagePicker-Prefix.pch";
 				INFOPLIST_FILE = "Demo/OBImagePicker-Info.plist";
@@ -699,6 +698,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Demo/OBImagePicker-Prefix.pch";
 				INFOPLIST_FILE = "Demo/OBImagePicker-Info.plist";
@@ -777,6 +777,7 @@
 				A74D4CC219780B2B000A9991 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
