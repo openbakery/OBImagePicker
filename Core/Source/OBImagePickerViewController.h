@@ -12,8 +12,8 @@
 
 @class OBImagePickerViewController;
 
-typedef void (^OBAssertPickerSelectionHandlerBlock)(NSArray *assets, OBImagePickerViewController *controller);
-typedef void (^OBAssertPickerErrorHandlerBlock)(NSError *error, OBImagePickerViewController *controller);
+typedef void (^OBAssetPickerSelectionHandlerBlock)(NSArray *assets, OBImagePickerViewController *controller);
+typedef void (^OBAssetPickerErrorHandlerBlock)(NSError *error, OBImagePickerViewController *controller);
 
 
 NS_ENUM(NSInteger, OBImagePickerSelectionMode) {
@@ -24,7 +24,7 @@ NS_ENUM(NSInteger, OBImagePickerSelectionMode) {
 
 @interface OBImagePickerViewController : UINavigationController
 
-- (instancetype)initWithLibrary:(id<OBAssetLibrary>)library selectionHandler:(OBAssertPickerSelectionHandlerBlock)selectionHandler errorHandler:(OBAssertPickerErrorHandlerBlock)errorHandler;
+- (instancetype)initWithLibrary:(id<OBAssetLibrary>)library selectionHandler:(OBAssetPickerSelectionHandlerBlock)selectionHandler errorHandler:(OBAssetPickerErrorHandlerBlock)errorHandler;
 
 - (void)registerAssetCellClass:(Class)cellClass;
 

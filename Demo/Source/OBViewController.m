@@ -24,7 +24,7 @@
 	OBALAssetLibrary *library = [[OBALAssetLibrary alloc] initWithType:OBAssetLibraryTypeAll];
 
 	__weak OBViewController *weakSelf = self;
-	OBAssertPickerSelectionHandlerBlock selectionHandler = ^(NSArray *assets, OBImagePickerViewController *controller) {
+	OBAssetPickerSelectionHandlerBlock selectionHandler = ^(NSArray *assets, OBImagePickerViewController *controller) {
 	    if ([assets count]) {
 		    OBAsset *firstAsset = [assets firstObject];
 		    if (firstAsset.isPhoto) {

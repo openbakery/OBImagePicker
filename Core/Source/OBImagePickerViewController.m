@@ -20,7 +20,7 @@
 	Class _registeredAssetCellClass;
 }
 
-- (instancetype)initWithLibrary:(id<OBAssetLibrary>)library selectionHandler:(OBAssertPickerSelectionHandlerBlock)selectionHandler errorHandler:(OBAssertPickerErrorHandlerBlock)errorHandler {
+- (instancetype)initWithLibrary:(id<OBAssetLibrary>)library selectionHandler:(OBAssetPickerSelectionHandlerBlock)selectionHandler errorHandler:(OBAssetPickerErrorHandlerBlock)errorHandler {
 	OBCollectionPickerViewController *collectionPickerViewController = [[OBCollectionPickerViewController alloc] initWithLibrary:library];
 	collectionPickerViewController.selectionHandler = selectionHandler;
 	collectionPickerViewController.errorHandler = errorHandler;

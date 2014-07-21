@@ -80,7 +80,7 @@
 		NSBundle *resourceBundle = [NSBundle bundleWithPath:resourceBundlePath];
 		NSAssert(resourceBundle, @"Unable to find OBImagePicker resource bundle");
 		
-		NSString *imagePath = [resourceBundle pathForResource:@"OBAssertCheckedImage" ofType:@"png"];
+		NSString *imagePath = [resourceBundle pathForResource:@"OBAssetCheckedImage" ofType:@"png"];
 		UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
 		NSAssert(image, @"Unable to find checked image");
 		
