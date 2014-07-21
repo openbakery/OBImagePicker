@@ -12,14 +12,14 @@
 @class OBCollection;
 
 
-typedef enum {
+NS_ENUM(NSInteger, OBAssetLibraryType) {
 	OBAssetLibraryTypeAll,
 	OBAssetLibraryTypePhoto,
 	OBAssetLibraryTypeVideo
-} OBAssetLibraryType;
+};
 
 @interface OBALAssetLibrary : NSObject <OBAssetLibrary>
 
-- (instancetype)initWithType:(OBAssetLibraryType)type;
+- (instancetype)initWithType:(enum OBAssetLibraryType)type;
 
 @end
