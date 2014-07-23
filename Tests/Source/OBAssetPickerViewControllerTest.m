@@ -13,6 +13,7 @@
 #import "OBDefaultAssetCollectionViewCell.h"
 #import "UIBarButtonTestHelper.h"
 #import "OBTestAssetCollectionViewCell.h"
+#import "UIWindowStub.h"
 
 #define HC_SHORTHAND
 #import <OCHamcrest.h>
@@ -37,9 +38,10 @@
 	_window = [[UIWindow alloc] init];
 	_viewController = [[OBAssetPickerViewController alloc] initWithCollection:nil];
 	_navigationController = [[TestNavigationController alloc] initWithRootViewController:_viewController];
-	_window.rootViewController = _navigationController;
 	_photoLibrary = mockProtocol(@protocol(OBAssetLibrary));
 	_viewController.photoLibrary = _photoLibrary;
+	_window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+	_window.rootViewController = _navigationController;
 
 	NSBundle *bundle = [NSBundle bundleForClass:[self class]];
 	NSString *path = [bundle pathForResource:@"Asset" ofType:@"png"];
@@ -58,8 +60,19 @@
 
 }
 
-- (void)testCollectionView {
+
+
+- (void)makeVisible {
 	[_window makeKeyAndVisible];
+#ifdef __IPHONE_8_0
+	if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1) {
+		[[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
+	}
+#endif
+}
+
+- (void)testCollectionView {
+	[self makeVisible];
 	assertThat(_viewController.collectionView, is(notNilValue()));
 	assertThat(_viewController.collectionView.dataSource, is(_viewController));
 	assertThat(_viewController.collectionView.delegate, is(_viewController));
@@ -86,14 +99,15 @@
 }
 
 - (void)testNumberItemsInSection {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 	NSInteger numberItems = [_viewController collectionView:_viewController.collectionView numberOfItemsInSection:0];
 	assertThatInteger(numberItems, is(@20));
 }
 
 - (void)testCollectionViewCell {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
+
 	[self mockLibraryWithCollection:_assets];
 
 	OBDefaultAssetCollectionViewCell *cell = (OBDefaultAssetCollectionViewCell*)[_viewController collectionView:_viewController.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
@@ -106,7 +120,7 @@
 }
 
 - (void)testLayout {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 
 	if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
@@ -140,7 +154,7 @@
 
 - (void)testSelectedCell {
 
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 
 	OBDefaultAssetCollectionViewCell *cell = (OBDefaultAssetCollectionViewCell*)[_viewController collectionView:_viewController.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
@@ -152,7 +166,7 @@
 }
 
 - (void)testDoneButton {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 
 	UIBarButtonItem *doneButton = _viewController.navigationItem.rightBarButtonItem;
@@ -170,7 +184,7 @@
 }
 
 - (void)testTitle {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 
 	assertThat(_viewController.navigationItem.title, is(NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE", @"OBAssetPicker", @"")));
@@ -193,7 +207,7 @@
 
 
 - (void)testTitleVideo {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 
 	assertThat(_viewController.navigationItem.title, is(NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE", @"OBAssetPicker", @"")));
@@ -226,7 +240,7 @@
 
 
 - (void)testDonePressed {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 
 	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
@@ -249,7 +263,7 @@
 }
 
 - (void)testNoAssets {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[self mockLibraryWithCollection:@[]];
 
 	NSInteger numberItems = [_viewController collectionView:_viewController.collectionView numberOfItemsInSection:0];
@@ -259,7 +273,7 @@
 
 - (void)testPhotoCell {
 
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 
 	OBDefaultAssetCollectionViewCell *cell = (OBDefaultAssetCollectionViewCell*)[_viewController collectionView:_viewController.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:10 inSection:0]];
@@ -274,7 +288,7 @@
 }
 
 - (void)testSelectSameItemTwice {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 
 	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
@@ -293,7 +307,7 @@
 }
 
 - (void)testSetSelectedItem {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 
 	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
@@ -307,7 +321,7 @@
 
 
 - (void)testHandleError {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 
 	NSError *error = [NSError errorWithDomain:@"Test" code:1 userInfo:nil];
 
@@ -328,7 +342,7 @@
 
 
 - (void)testReloadOnViewWillAppear {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[verify(_photoLibrary) fetchPhotosForCollection:anything() completion:anything()];
 
 	UIViewController *dummyViewController = [[UIViewController alloc] init];
@@ -356,7 +370,7 @@
 
 - (void)testSingleSelection_DoneButtonHidden {
 	_navigationController.selectionMode = OBImagePickerSingleSelectionMode;
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 
 	assertThat(_viewController.navigationItem.rightBarButtonItem, is(nilValue()));
 
@@ -365,7 +379,7 @@
 
 - (void)testSingleSelection_SelectAsset {
 	_navigationController.selectionMode = OBImagePickerSingleSelectionMode;
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 
 
@@ -390,7 +404,7 @@
 	[_navigationController registerAssetCellClass:[OBTestAssetCollectionViewCell class]];
 
 
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 
 	OBDefaultAssetCollectionViewCell *cell = (OBDefaultAssetCollectionViewCell*)[_viewController collectionView:_viewController.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:10 inSection:0]];
