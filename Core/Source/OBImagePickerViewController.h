@@ -28,6 +28,8 @@ NS_ENUM(NSInteger, OBImagePickerSelectionMode) {
 
 - (void)registerAssetCellClass:(Class)cellClass;
 
+- (void)registerTableCellClass:(Class)cellClass;
+
 @property (nonatomic, assign) enum OBImagePickerSelectionMode selectionMode;
 
 - (void)reloadData;

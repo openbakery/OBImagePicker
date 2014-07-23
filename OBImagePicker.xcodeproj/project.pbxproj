@@ -51,6 +51,7 @@
 		A7CB0B24197D0ABB0058BE4E /* OBAssetCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B230DBA81AAAFD8B1C824 /* OBAssetCollectionViewCell.m */; };
 		A7CB0B25197D0ACA0058BE4E /* OBImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B26C436704145F4ACF0BF /* OBImagePickerViewController.m */; };
 		CD8DDC2E98944E06935A6BE5 /* libPods-Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B41F99B79040462185334385 /* libPods-Tests.a */; };
+		FA20947C197F9CBB00466341 /* OBCustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA20947B197F9CBB00466341 /* OBCustomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +189,8 @@
 		A7CB0AEC197915E10058BE4E /* libOBImagePicker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOBImagePicker.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7CB0B071979161E0058BE4E /* OBImagePicker.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OBImagePicker.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		B41F99B79040462185334385 /* libPods-Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA20947A197F9CBB00466341 /* OBCustomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBCustomTableViewCell.h; sourceTree = "<group>"; };
+		FA20947B197F9CBB00466341 /* OBCustomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OBCustomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,8 +303,8 @@
 				355B2AA55CCDE9D764FF3806 /* OBAssetCollectionViewCell.h */,
 				355B230DBA81AAAFD8B1C824 /* OBAssetCollectionViewCell.m */,
 				355B2407D2D75C1EF5704348 /* OBAssetLibrary.h */,
-				355B25D9A0E3AF58DC0C335F /* OBAssetPickerViewController.m */,
 				355B279CB36258F7EFE7C957 /* OBAssetPickerViewController.h */,
+				355B25D9A0E3AF58DC0C335F /* OBAssetPickerViewController.m */,
 				355B2FB07023020DF34C59CB /* OBCollection.h */,
 				355B22D399F0D29BCF3E7C44 /* OBCollection.m */,
 				355B2A7EDB21D25B5ED49D58 /* OBCollectionPickerViewController.h */,
@@ -347,6 +350,8 @@
 				355B2FEDA47898552D73D172 /* main.m */,
 				355B2ACEC6851675F683331F /* OBCustomAssetCollectionViewCell.m */,
 				355B272E7B7862D900D8C4BF /* OBCustomAssetCollectionViewCell.h */,
+				FA20947A197F9CBB00466341 /* OBCustomTableViewCell.h */,
+				FA20947B197F9CBB00466341 /* OBCustomTableViewCell.m */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -634,6 +639,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				355B2F5DFFE39AAC3B16A2BF /* OBViewController.m in Sources */,
+				FA20947C197F9CBB00466341 /* OBCustomTableViewCell.m in Sources */,
 				355B2E8F2E09644F1C27B66A /* OBAppDelegate.m in Sources */,
 				355B279CAF82B7E9E0A8AB8C /* main.m in Sources */,
 				355B271BF24208FB89B795A7 /* OBTestAssetCollectionViewCell.m in Sources */,
