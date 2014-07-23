@@ -179,6 +179,11 @@
 	if (![_selectedAssets containsObject:asset]) {
 		[_selectedAssets addObject:asset];
 	}
+	
+	if (self.selectionHandler) {
+		self.selectionHandler(_selectedAssets, (OBImagePickerViewController *)self.navigationController);
+	}
+	
 	[self updateContentAfterInteraction];
 }
 
