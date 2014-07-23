@@ -11,7 +11,10 @@
 #import "OBALCollection.h"
 #import "OBALAssetLibrary.h"
 #import "OBAsset.h"
+
+// Custom cells
 #import "OBCustomAssetCollectionViewCell.h"
+#import "OBCustomTableViewCell.h"
 
 @interface OBViewController ()
 
@@ -38,6 +41,7 @@
 
 	if (self.useCustomAssetCell.on) {
 		[imagePickerViewController registerAssetCellClass:[OBCustomAssetCollectionViewCell class]];
+		[imagePickerViewController registerTableCellClass:[OBCustomTableViewCell class]];
 	}
 
 	imagePickerViewController.selectionMode = selectionMode;
