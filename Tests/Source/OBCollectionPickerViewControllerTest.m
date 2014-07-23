@@ -163,8 +163,8 @@
 
 	OBCollection *photoCollection = [[OBCollection alloc] initWithName:@"Camera Roll" image:[[UIImage alloc] init] numberOfAssets:10];
 	[self mockLibraryWithCollection:@[photoCollection]];
-	OBAssertPickerSelectionHandlerBlock selectionHandler = ^(NSArray *result, OBImagePickerViewController *controller) {};
-	OBAssertPickerErrorHandlerBlock errorHandler = ^(NSError *error, OBImagePickerViewController *controller) {};
+	OBAssetPickerSelectionHandlerBlock selectionHandler = ^(NSArray *result, OBImagePickerViewController *controller) {};
+	OBAssetPickerErrorHandlerBlock errorHandler = ^(NSError *error, OBImagePickerViewController *controller) {};
 	_viewController.selectionHandler = selectionHandler;
 	_viewController.errorHandler = errorHandler;
 

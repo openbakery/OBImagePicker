@@ -31,7 +31,6 @@ task continuous(dependsOn: 'xcodebuild')
 gradle.taskGraph.whenReady { taskGraph ->
 
 	if (taskGraph.hasTask(test)) {
-		println "CONFIGURE INTEGRATION"
 		xcodebuild {
 		
 		

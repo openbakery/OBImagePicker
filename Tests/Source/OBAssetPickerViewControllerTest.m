@@ -31,6 +31,8 @@
 	OBALAssetLibrary *_photoLibrary;
 
 	NSMutableArray *_assets;
+	
+	NSBundle *_resourceBundle;
 }
 
 - (void)setUp {
@@ -56,7 +58,9 @@
 		[given(asset.thumbnailImage) willReturn:[UIImage imageWithContentsOfFile:path]];
 		[_assets addObject:asset];
 	}
-
+	
+	NSString *resourceBundlePath = [[NSBundle bundleForClass:[OBAssetPickerViewController class]] pathForResource:@"OBImagePicker" ofType:@"bundle"];
+	_resourceBundle = [NSBundle bundleWithPath:resourceBundlePath];
 }
 
 
@@ -186,20 +190,20 @@
 	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 
-	assertThat(_viewController.navigationItem.title, is(NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE", @"OBAssetPicker", @"")));
+	assertThat(_viewController.navigationItem.title, is(NSLocalizedStringFromTableInBundle(@"ASSET_PICKER_TITLE", @"OBAssetPicker", _resourceBundle, @"")));
 
 	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
 	[_viewController.collectionView selectItemAtIndexPath:indexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
 	[_viewController collectionView:_viewController.collectionView didSelectItemAtIndexPath:indexPath];
 
-	assertThat(_viewController.navigationItem.title, is(NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE_SINGLE_PHOTO_SELECTION", @"OBAssetPicker", @"")));
+	assertThat(_viewController.navigationItem.title, is(NSLocalizedStringFromTableInBundle(@"ASSET_PICKER_TITLE_SINGLE_PHOTO_SELECTION", @"OBAssetPicker", _resourceBundle, @"")));
 
 	// select second item
 	indexPath = [NSIndexPath indexPathForRow:1 inSection:0];
 	[_viewController.collectionView selectItemAtIndexPath:indexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
 	[_viewController collectionView:_viewController.collectionView didSelectItemAtIndexPath:indexPath];
 
-	NSString *expectedString = [NSString stringWithFormat:NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE_MULTIPLE_PHOTOS_SELECTION", @"OBAssetPicker", @""), @"2"];
+	NSString *expectedString = [NSString stringWithFormat:NSLocalizedStringFromTableInBundle(@"ASSET_PICKER_TITLE_MULTIPLE_PHOTOS_SELECTION", @"OBAssetPicker", _resourceBundle, @""), @"2"];
 	assertThat(_viewController.navigationItem.title, is(expectedString));
 
 }
@@ -209,20 +213,20 @@
 	[self makeVisible];
 	[self mockLibraryWithCollection:_assets];
 
-	assertThat(_viewController.navigationItem.title, is(NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE", @"OBAssetPicker", @"")));
+	assertThat(_viewController.navigationItem.title, is(NSLocalizedStringFromTableInBundle(@"ASSET_PICKER_TITLE", @"OBAssetPicker", _resourceBundle, @"")));
 
 	NSIndexPath *indexPath = [NSIndexPath indexPathForRow:10 inSection:0];
 	[_viewController.collectionView selectItemAtIndexPath:indexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
 	[_viewController collectionView:_viewController.collectionView didSelectItemAtIndexPath:indexPath];
 
-	assertThat(_viewController.navigationItem.title, is(NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE_SINGLE_VIDEO_SELECTION", @"OBAssetPicker", @"")));
+	assertThat(_viewController.navigationItem.title, is(NSLocalizedStringFromTableInBundle(@"ASSET_PICKER_TITLE_SINGLE_VIDEO_SELECTION", @"OBAssetPicker", _resourceBundle, @"")));
 
 	// select second video
 	indexPath = [NSIndexPath indexPathForRow:11 inSection:0];
 	[_viewController.collectionView selectItemAtIndexPath:indexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
 	[_viewController collectionView:_viewController.collectionView didSelectItemAtIndexPath:indexPath];
 
-	NSString *expectedString = [NSString stringWithFormat:NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE_MULTIPLE_VIDEOS_SELECTION", @"OBAssetPicker", @""), @"2"];
+	NSString *expectedString = [NSString stringWithFormat:NSLocalizedStringFromTableInBundle(@"ASSET_PICKER_TITLE_MULTIPLE_VIDEOS_SELECTION", @"OBAssetPicker", _resourceBundle, @""), @"2"];
 	assertThat(_viewController.navigationItem.title, is(expectedString));
 
 
@@ -231,7 +235,7 @@
 	[_viewController.collectionView selectItemAtIndexPath:indexPath animated:NO scrollPosition:UICollectionViewScrollPositionNone];
 	[_viewController collectionView:_viewController.collectionView didSelectItemAtIndexPath:indexPath];
 
-	expectedString = [NSString stringWithFormat:NSLocalizedStringFromTable(@"ASSET_PICKER_TITLE_MULTIPLE_ITEMS_SELECTION", @"OBAssetPicker", @""), @"3"];
+	expectedString = [NSString stringWithFormat:NSLocalizedStringFromTableInBundle(@"ASSET_PICKER_TITLE_MULTIPLE_ITEMS_SELECTION", @"OBAssetPicker", _resourceBundle, @""), @"3"];
 	assertThat(_viewController.navigationItem.title, is(expectedString));
 
 

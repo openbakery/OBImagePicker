@@ -18,8 +18,8 @@
 @property (nonatomic, strong) UITableView *tableView;
 
 
-@property(nonatomic, copy) OBAssertPickerSelectionHandlerBlock selectionHandler;
-@property(nonatomic, copy) OBAssertPickerErrorHandlerBlock errorHandler;
+@property(nonatomic, copy) OBAssetPickerSelectionHandlerBlock selectionHandler;
+@property(nonatomic, copy) OBAssetPickerErrorHandlerBlock errorHandler;
 
 - (void)handleError:(NSError *)error;
 

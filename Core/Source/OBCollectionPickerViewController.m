@@ -12,6 +12,9 @@
 #import "OBCollectionTableViewCell.h"
 #import "OBAssetPickerViewController.h"
 
+@interface OBImagePickerViewController(private)
+- (Class)registeredTableViewCellClass;
+@end
 
 @interface OBCollectionPickerViewController ()
 @property(nonatomic, strong) NSArray* collections;
@@ -43,7 +46,10 @@
 	self.tableView.delegate = self;
 	self.tableView.dataSource = self;
 	[self.view addSubview:self.tableView];
-	[self.tableView registerClass:[OBCollectionTableViewCell class] forCellReuseIdentifier:collectionCellIdentifier];
+	
+	// register custom table view class
+	OBImagePickerViewController *imagePickerViewController = (OBImagePickerViewController *)self.navigationController;
+	[self.tableView registerClass:[imagePickerViewController registeredTableViewCellClass] forCellReuseIdentifier:collectionCellIdentifier];
 
 	UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelButtonPressed:)];
 	self.navigationItem.leftBarButtonItem = cancelButton;
@@ -51,8 +57,6 @@
 	self.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 
 	self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-
-
 }
 
 
@@ -64,6 +68,9 @@
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 
+	// deselect previous selected row
+	[self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:animated];
+	
 	if (_reloadOnViewWillAppear) {
 		[self reloadData];
 	}
