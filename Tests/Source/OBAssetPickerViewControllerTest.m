@@ -13,7 +13,6 @@
 #import "OBDefaultAssetCollectionViewCell.h"
 #import "UIBarButtonTestHelper.h"
 #import "OBTestAssetCollectionViewCell.h"
-#import "UIWindowStub.h"
 
 #define HC_SHORTHAND
 #import <OCHamcrest.h>

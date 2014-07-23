@@ -23,32 +23,6 @@ xcodebuild {
 
 
 
-task coverage(type:Exec, dependsOn:['test']) {
-
-	doFirst {
-		project.ext.coverageDirectory = new File('build/coverage')
-		project.ext.coverageDirectory.mkdirs()
-	
-
-		ant.get(src: 'https://github.com/gcovr/gcovr/archive/3.1.zip', dest: 'build/coverage', verbose:true)
-		ant.unzip(src: "build/coverage/3.1.zip",  dest:"build/coverage")
-	
-	}
-
-	workingDir "."
-
-	commandLine 'python', './build/coverage/gcovr-3.1/scripts/gcovr', '-e', '.*h$|.*UnitTests.*m$', '-r', '.', '--xml'
-
-	ByteArrayOutputStream outputStream = new ByteArrayOutputStream()
-	standardOutput = outputStream
- 
- 	doLast {
- 		FileOutputStream fileStream = new FileOutputStream("build/coverage/coverage.xml");
-		outputStream.writeTo(fileStream);
- 	}
-}
-
-
 
 task continuous(dependsOn: 'xcodebuild')
 
