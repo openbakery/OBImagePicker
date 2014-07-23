@@ -89,7 +89,7 @@
 
 	MKTArgumentCaptor *completionArgument = [[MKTArgumentCaptor alloc] init];
 
-	[verify(_photoLibrary) fetchPhotosForCollection:anything() completion:[completionArgument capture]];
+	[verify(_photoLibrary) fetchAssetsForCollection:anything() completion:[completionArgument capture]];
 
 	OBAssetLibraryCompletionBlock completionBlock = [completionArgument value];
 	if (completionBlock) {
@@ -331,7 +331,7 @@
 	};
 
 	MKTArgumentCaptor *completionArgument = [[MKTArgumentCaptor alloc] init];
-	[verify(_photoLibrary) fetchPhotosForCollection:anything() completion:[completionArgument capture]];
+	[verify(_photoLibrary) fetchAssetsForCollection:anything() completion:[completionArgument capture]];
 	OBAssetLibraryCompletionBlock completionBlock = [completionArgument value];
 	if (completionBlock) {
 		completionBlock(nil, error);
@@ -343,7 +343,7 @@
 
 - (void)testReloadOnViewWillAppear {
 	[self makeVisible];
-	[verify(_photoLibrary) fetchPhotosForCollection:anything() completion:anything()];
+	[verify(_photoLibrary) fetchAssetsForCollection:anything() completion:anything()];
 
 	UIViewController *dummyViewController = [[UIViewController alloc] init];
 	[_navigationController pushViewController:dummyViewController animated:NO];
@@ -352,7 +352,7 @@
 	_photoLibrary = mockProtocol(@protocol(OBAssetLibrary));
 	[_viewController setValue:_photoLibrary forKey:@"_photoLibrary"];
 	[_viewController reloadData];
-	[verifyCount(_photoLibrary, never()) fetchPhotosForCollection:anything() completion:anything()];
+	[verifyCount(_photoLibrary, never()) fetchAssetsForCollection:anything() completion:anything()];
 
 
 	[_navigationController popViewControllerAnimated:NO];
@@ -362,7 +362,7 @@
 	[_viewController setValue:_photoLibrary forKey:@"_photoLibrary"];
 	[_viewController viewWillAppear:NO];
 
-	[verify(_photoLibrary) fetchPhotosForCollection:anything() completion:anything()];
+	[verify(_photoLibrary) fetchAssetsForCollection:anything() completion:anything()];
 
 
 }
