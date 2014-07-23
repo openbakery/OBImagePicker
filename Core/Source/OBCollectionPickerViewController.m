@@ -68,6 +68,9 @@
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 
+	// deselect previous selected row
+	[self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:animated];
+	
 	if (_reloadOnViewWillAppear) {
 		[self reloadData];
 	}
