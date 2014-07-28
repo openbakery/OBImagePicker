@@ -85,11 +85,11 @@
 		_selectionMode = imagePickerViewController.selectionMode;
 	}
 
-	if (_selectionMode == OBImagePickerMultipleSelectionMode) {
-		_doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneButtonPressed:)];
-		self.navigationItem.rightBarButtonItem = _doneButton;
-		_doneButton.enabled = NO;
-	}
+//	if (_selectionMode == OBImagePickerMultipleSelectionMode) {
+//		_doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneButtonPressed:)];
+//		self.navigationItem.rightBarButtonItem = _doneButton;
+//		_doneButton.enabled = NO;
+//	}
 
 	if (_reloadOnViewWillAppear) {
 		[self reloadData];

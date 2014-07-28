@@ -55,8 +55,8 @@
 		[self.tableView registerClass:[OBCollectionTableViewCell class] forCellReuseIdentifier:collectionCellIdentifier];
 	}
 
-	UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelButtonPressed:)];
-	self.navigationItem.leftBarButtonItem = cancelButton;
+//	UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelButtonPressed:)];
+//	self.navigationItem.leftBarButtonItem = cancelButton;
 
 	self.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 
