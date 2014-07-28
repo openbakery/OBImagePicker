@@ -833,6 +833,7 @@
 				INFOPLIST_FILE = "Demo/OBImagePicker-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = OBImagePicker;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -848,6 +849,7 @@
 				INFOPLIST_FILE = "Demo/OBImagePicker-Info.plist";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = OBImagePicker;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
