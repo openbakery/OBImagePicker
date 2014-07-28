@@ -64,7 +64,7 @@
 }
 
 
-- (void)fetchPhotosForCollection:(OBCollection *)collection completion:(OBAssetLibraryCompletionBlock)completion {
+- (void)fetchAssetsForCollection:(OBCollection *)collection completion:(OBAssetLibraryCompletionBlock)completion {
 
 
 	if ([collection isKindOfClass:[OBALCollection class]]) {

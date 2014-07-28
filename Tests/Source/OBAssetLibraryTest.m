@@ -91,7 +91,7 @@
 	OBALCollection *collection = [[OBALCollection alloc] initWithALAssetsGroup:assetsGroup];
 	__block NSArray *assets = nil;
 
-	[_assetLibrary fetchPhotosForCollection:collection completion:^(NSArray *result, NSError *error) {
+	[_assetLibrary fetchAssetsForCollection:collection completion:^(NSArray *result, NSError *error) {
 	    if (result) {
 		    assets = result;
 	    }

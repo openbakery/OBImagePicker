@@ -48,8 +48,12 @@
 	[self.view addSubview:self.tableView];
 	
 	// register custom table view class
-	OBImagePickerViewController *imagePickerViewController = (OBImagePickerViewController *)self.navigationController;
-	[self.tableView registerClass:[imagePickerViewController registeredTableViewCellClass] forCellReuseIdentifier:collectionCellIdentifier];
+	if ([self.navigationController isKindOfClass:[OBImagePickerViewController class]]) {
+		OBImagePickerViewController *imagePickerViewController = (OBImagePickerViewController *)self.navigationController;
+		[self.tableView registerClass:[imagePickerViewController registeredTableViewCellClass] forCellReuseIdentifier:collectionCellIdentifier];
+	} else {
+		[self.tableView registerClass:[OBCollectionTableViewCell class] forCellReuseIdentifier:collectionCellIdentifier];
+	}
 
 	UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelButtonPressed:)];
 	self.navigationItem.leftBarButtonItem = cancelButton;
@@ -68,6 +72,9 @@
 - (void)viewWillAppear:(BOOL)animated {
 	[super viewWillAppear:animated];
 
+	// deselect previous selected row
+	[self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:animated];
+	
 	if (_reloadOnViewWillAppear) {
 		[self reloadData];
 	}

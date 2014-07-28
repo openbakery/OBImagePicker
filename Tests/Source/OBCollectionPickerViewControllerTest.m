@@ -44,11 +44,20 @@
 	_photoLibrary = mock([OBALAssetLibrary class]);
 	_viewController = [[OBCollectionPickerViewController alloc] initWithLibrary:_photoLibrary];
 	_navigationController = [[TestNavigationController alloc] initWithRootViewController:_viewController];
+}
+
+- (void)makeVisible {
 	_window.rootViewController = _navigationController;
+	[_window makeKeyAndVisible];
+#ifdef __IPHONE_8_0
+	if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1) {
+		[[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
+	}
+#endif
 }
 
 - (void)testTableView {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	assertThat(_viewController.tableView, is(notNilValue()));
 	assertThat(_viewController.tableView.dataSource, is(_viewController));
 	assertThat(_viewController.tableView.delegate, is(_viewController));
@@ -58,6 +67,7 @@
 	assertThatInteger(_viewController.tableView.separatorStyle, is(@(UITableViewCellSeparatorStyleNone)));
 
 }
+
 
 - (void)mockLibraryWithCollection:(NSArray *)collection {
 
@@ -72,7 +82,7 @@
 }
 
 - (void)testNumberItemsInSection {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 
 	OBCollection *photoCollection = [[OBCollection alloc] initWithName:@"Camera Roll" image:nil numberOfAssets:10];
 	[self mockLibraryWithCollection:@[photoCollection]];
@@ -81,7 +91,7 @@
 }
 
 - (void)testTableViewCell {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 
 	OBCollection *photoCollection = [[OBCollection alloc] initWithName:@"Camera Roll" image:[[UIImage alloc] init] numberOfAssets:10];
 	[self mockLibraryWithCollection:@[photoCollection]];
@@ -99,7 +109,7 @@
 }
 
 - (void)testReloadTableViewOnGroupResult {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 
 	UITableView *tableView = mock([UITableView class]);
 	_viewController.tableView = tableView;
@@ -113,7 +123,7 @@
 
 
 - (void)testCloseButtonItem {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	UIBarButtonItem *closeButton = _viewController.navigationItem.leftBarButtonItem;
 	assertThat(closeButton, is(notNilValue()));
 }
@@ -123,21 +133,33 @@
 
 	UIViewController *rootViewController = [[UIViewController alloc] init];
 	_navigationController = [[TestNavigationController alloc] initWithRootViewController:rootViewController];
-	_window = [[UIWindow alloc] init];
 	_window.rootViewController = _navigationController;
 
 	[_window makeKeyAndVisible];
-
+#ifdef __IPHONE_8_0
+	if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1) {
+		[[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:0.1]];
+	}
+#endif
 	[rootViewController.navigationController presentViewController:_viewController animated:NO completion:nil];
-
+#ifdef __IPHONE_8_0
+	if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1) {
+		[[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.0]];
+	}
+#endif
 	UIBarButtonItem *closeButton = _viewController.navigationItem.leftBarButtonItem;
 	[UIBarButtonTestHelper performBarButtonAction:closeButton];
+#ifdef __IPHONE_8_0
+	if (floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1) {
+		[[NSRunLoop mainRunLoop] runUntilDate:[NSDate dateWithTimeIntervalSinceNow:1.0]];
+	}
+#endif
 	assertThat(_navigationController.visibleViewController, is(rootViewController));
 }
 
 
 - (void)testSelectCell {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 
 	OBCollection *photoCollection = [[OBCollection alloc] initWithName:@"Camera Roll" image:[[UIImage alloc] init] numberOfAssets:10];
 	[self mockLibraryWithCollection:@[photoCollection]];
@@ -163,7 +185,7 @@
 
 
 - (void)testHandleError {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 
 	NSError *error = [NSError errorWithDomain:@"Test" code:1 userInfo:nil];
 
@@ -187,7 +209,7 @@
 }
 
 - (void)testReloadOnViewWillAppear {
-	[_window makeKeyAndVisible];
+	[self makeVisible];
 	[verify(_photoLibrary) fetchCollections:anything()];
 
 	UIViewController *dummyViewController = [[UIViewController alloc] init];

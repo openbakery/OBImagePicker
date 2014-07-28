@@ -107,7 +107,7 @@
 
 
 	__weak OBAssetPickerViewController *weakSelf = self;
-	[self.photoLibrary fetchPhotosForCollection:self.collection completion:^(NSArray *result, NSError *error) {
+	[self.photoLibrary fetchAssetsForCollection:self.collection completion:^(NSArray *result, NSError *error) {
 	    if (result) {
 		    weakSelf.photos = result;
 		    if ([weakSelf.photos count]) {
@@ -179,6 +179,11 @@
 	if (![_selectedAssets containsObject:asset]) {
 		[_selectedAssets addObject:asset];
 	}
+	
+	if (self.selectionHandler) {
+		self.selectionHandler(_selectedAssets, (OBImagePickerViewController *)self.navigationController);
+	}
+	
 	[self updateContentAfterInteraction];
 }
 
