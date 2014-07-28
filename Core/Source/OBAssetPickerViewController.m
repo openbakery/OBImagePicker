@@ -192,6 +192,11 @@
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
 	OBAsset *asset = [self assetAtIndexPath:indexPath];
 	[_selectedAssets removeObject:asset];
+	
+	if (self.selectionHandler) {
+		self.selectionHandler(_selectedAssets, (OBImagePickerViewController *)self.navigationController);
+	}
+	
 	[self updateContentAfterInteraction];
 }
 
