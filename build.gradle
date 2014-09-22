@@ -6,19 +6,19 @@ buildscript {
 				mavenCentral()
     }
     dependencies {
-        classpath group: 'org.openbakery', name: 'xcodePlugin', version: '0.9.11.a'
+        classpath group: 'org.openbakery', name: 'xcodePlugin', version: '0.9.12.c'
     }
 }
 apply plugin: 'xcode'
 
 
 xcodebuild {
+	version = "6A317"
+
 	scheme = 'OBImagePicker'
 	workspace = 'OBImagePicker.xcworkspace'
   target = 'OBImagePicker'
 	configuration = 'Debug'
-
-	
 
 }
 
@@ -37,7 +37,7 @@ gradle.taskGraph.whenReady { taskGraph ->
 			// iOS8 Simulators
 			destination {
 				name = "iPhone 5s"
-				id = 'A3B2BD6F-4965-4FA9-AA14-27C23F18042A'
+				platform = 'iOS Simulator'
 			}
 		
 			// iOS7 Simulators
