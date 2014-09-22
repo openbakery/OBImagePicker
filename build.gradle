@@ -1,7 +1,7 @@
 buildscript {
     repositories {
 				maven {
-					url uri('/Users/rene/workspace/openbakery/xcodePlugin/repository')
+					url('http://openbakery.org/repository/')
 				}
 				mavenCentral()
     }
@@ -14,12 +14,10 @@ apply plugin: 'xcode'
 
 xcodebuild {
 	version = "6A317"
-
 	scheme = 'OBImagePicker'
 	workspace = 'OBImagePicker.xcworkspace'
   target = 'OBImagePicker'
 	configuration = 'Debug'
-
 }
 
 
@@ -40,34 +38,9 @@ gradle.taskGraph.whenReady { taskGraph ->
 				platform = 'iOS Simulator'
 			}
 		
-			// iOS7 Simulators
 			destination {
 				platform = 'iOS Simulator'
-				name = 'iPad'
-			}
-
-			destination {
-				platform = 'iOS Simulator'
-				name = 'iPhone Retina (3.5-inch)'
-			}
-			
-			destination {
-				platform = 'iOS Simulator'
-				name = 'iPhone Retina (4-inch)'
-			}
-
-			destination {
-				platform = 'iOS Simulator'
-				name = 'iPad Retina'
-			}
-			
-			destination {
-				platform = 'iOS Simulator'
-				name = 'iPhone Retina (4-inch 64-bit)'
-			}
-			destination {
-				platform = 'iOS Simulator'
-				name = 'iPad Retina (64-bit)'
+				name = 'iPad.*'
 			}
 
 		}
