@@ -16,10 +16,10 @@
 @implementation OBALAssetLibrary {
 
 	ALAssetsLibrary *_assetsLibrary;
-	OBAssetLibraryType _type;
+	enum OBAssetLibraryType _type;
 }
 
-- (instancetype)initWithType:(OBAssetLibraryType)type {
+- (instancetype)initWithType:(enum OBAssetLibraryType)type {
 	self = [super init];
 	if (self) {
 		_assetsLibrary = [[ALAssetsLibrary alloc] init];
