@@ -1,7 +1,9 @@
 .DS_Store
 .idea
+.gradle
 Podfile.lock
 Pods
 xcuserdata
 project.xcworkspace
 OBImagePicker.xcworkspace
+build
