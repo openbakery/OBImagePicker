@@ -1,49 +1,24 @@
-buildscript {
-    repositories {
-				maven {
-					url('http://openbakery.org/repository/')
-				}
-				mavenCentral()
-    }
-    dependencies {
-        classpath group: 'org.openbakery', name: 'xcodePlugin', version: '0.9.12.c'
-    }
+plugins {
+  id "org.openbakery.xcode-plugin" version "0.12.2"
 }
-apply plugin: 'xcode'
 
 
 xcodebuild {
-	version = "6A317"
 	scheme = 'OBImagePicker'
 	workspace = 'OBImagePicker.xcworkspace'
-  target = 'OBImagePicker'
-	configuration = 'Debug'
-}
-
-
-
-
-task continuous(dependsOn: 'xcodebuild')
-
-
-
-gradle.taskGraph.whenReady { taskGraph ->
-
-	if (taskGraph.hasTask(test)) {
-		xcodebuild {
-		
-			// iOS8 Simulators
-			destination {
-				name = "iPhone 5s"
-				platform = 'iOS Simulator'
-			}
-		
-			destination {
-				platform = 'iOS Simulator'
-				name = 'iPad.*'
-			}
-
-		}
+  target = 'Demo App'
 	
+	destination {
+		name = "iPhone 5s"
+		platform = 'iOS Simulator'
+		os='9.*'
+	}
+
+	destination {
+		platform = 'iOS Simulator'
+		name = 'iPad 2'
+		os='9.*'
 	}
 }
+
+

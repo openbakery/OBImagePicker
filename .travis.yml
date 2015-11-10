@@ -1,0 +1,6 @@
+language: objective-c
+
+sudo: false
+
+script:
+    - ./gradlew test
