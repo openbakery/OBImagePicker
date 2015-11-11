@@ -1,5 +1,5 @@
 plugins {
-  id "org.openbakery.xcode-plugin" version "0.12.2"
+  id "org.openbakery.xcode-plugin" version "0.12.3"
 }
 
 
@@ -8,17 +8,7 @@ xcodebuild {
 	workspace = 'OBImagePicker.xcworkspace'
   target = 'Demo App'
 	
-	destination {
-		name = "iPhone 5s"
-		platform = 'iOS Simulator'
-		os='9.*'
-	}
-
-	destination {
-		platform = 'iOS Simulator'
-		name = 'iPad 2'
-		os='9.*'
-	}
+	destination = [ 'iPhone 5s', 'iPad 2' ]
 }
 
 
